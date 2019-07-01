@@ -1,0 +1,19 @@
+[
+  {
+    "name": "studio-sub-voluntary-cancel",
+    "languages": [
+      {
+        "en": {
+          "template_id": "d-8146e370bca14acf955bf1df39d8d93f",
+          "categories": []
+        }
+      }
+    ],
+    "email_params": [
+      "subscription_end_date",
+      "plan_name"
+
+    ],
+    "categories": []
+  }
+]
