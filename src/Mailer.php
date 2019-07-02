@@ -5,7 +5,6 @@ namespace Serato\SendGrid;
 
 use SendGrid;
 use SendGrid\Mail\Mail;
-use DateTime;
 
 class Mailer extends SendGrid
 {
