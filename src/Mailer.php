@@ -7,7 +7,7 @@ use SendGrid;
 use SendGrid\Mail\Mail;
 use DateTime;
 
-class Sdk extends SendGrid
+class Mailer extends SendGrid
 {
     const FROM_EMAIL = 'no-reply@serato.com';
     const FROM_NAME = 'Serato Web Mailer';

@@ -1,0 +1,31 @@
+[
+  {
+    "studio-sub-voluntary-cancel": {
+      "email_from": {
+        "from": "sales@serato.com",
+        "reply_to": "no-reply@serato.com"
+      },
+      "recipients": {
+        "cc": [
+          "sales@serato.com"
+        ],
+        "bcc": [
+          "sales@serato.com"
+        ]
+      },
+      "languages": [
+        {
+          "en": {
+            "template_id": "d-8146e370bca14acf955bf1df39d8d93f",
+            "categories": []
+          }
+        }
+      ],
+      "template_params": [
+        "subscription_end_date",
+        "plan_name"
+      ],
+      "categories": []
+    }
+  }
+]
