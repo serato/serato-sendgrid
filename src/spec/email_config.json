@@ -45,7 +45,7 @@
       "categories": []
     },
     "studio-sub-pending-change": {
-      "description": "Email template for a studio subscription change that takes affect current billing cycle ends.",
+      "description": "Email template for a studio subscription change that takes affect when current billing cycle ends.",
       "languages": [
         {
           "en": {
@@ -64,7 +64,7 @@
       "categories": []
     },
     "dj-sub-pending-change": {
-      "description": "Email template for a dj subscription change that takes affect current billing cycle ends.",
+      "description": "Email template for a dj subscription change that takes affect when current billing cycle ends.",
       "languages": [
         {
           "en": {
