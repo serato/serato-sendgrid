@@ -202,7 +202,7 @@
       "categories": []
     },
     "dj-sub-first-payment-declined": {
-      "description": "Email template for a recurring payment of a dj subscription that fails for the first time.",
+      "description": "Email template for a dj subscription when a recurring payment fails for the first time.",
       "languages": [
         {
           "en": {
@@ -217,7 +217,7 @@
       "categories": []
     },
     "studio-sub-first-payment-declined ": {
-      "description": "Email template for a recurring payment of a studio subscription that fails for the first time.",
+      "description": "Email template for a studio subscription when a recurring payment fails for the first time.",
       "languages": [
         {
           "en": {
@@ -232,7 +232,7 @@
       "categories": []
     },
     "dj-sub-second-payment-declined": {
-      "description": "Email template for a recurring payment of a dj subscription that fails for the second time.",
+      "description": "Email template for a dj subscription when a recurring payment fails for the second time.",
       "languages": [
         {
           "en": {
@@ -245,7 +245,7 @@
       "categories": []
     },
     "studio-sub-second-payment-declined": {
-      "description": "Email template for a recurring payment of a studio subscription that fails for the second time.",
+      "description": "Email template for a studio subscription when a recurring payment fails for the second time.",
       "languages": [
         {
           "en": {
@@ -258,7 +258,7 @@
       "categories": []
     },
     "dj-sub-third-payment-declined": {
-      "description": "Email template for a recurring payment of a dj subscription that fails for the third time.",
+      "description": "Email template for a dj subscriptiona when a recurring payment fails for the third time.",
       "languages": [
         {
           "en": {
@@ -274,7 +274,7 @@
       "categories": []
     },
     "studio-sub-third-payment-declined": {
-      "description": "Email template for a recurring payment of a studio subscription that fails for the third time.",
+      "description": "Email template for a studio subscription when a recurring payment fails for the third time.",
       "languages": [
         {
           "en": {
