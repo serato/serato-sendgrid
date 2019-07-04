@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace Serato\SendGrid;
 
-use phpDocumentor\Reflection\Types\Boolean;
 use SendGrid;
 use SendGrid\Mail\Mail;
 use SendGrid\Mail\Category;
@@ -14,8 +13,9 @@ use Exception;
 
 class Mailer extends SendGrid
 {
-    const FROM_EMAIL = 'no-reply@serato.com';
-    const FROM_NAME = 'Serato Web Mailer';
+    const EMAIL_FROM = 'no-reply@serato.com';
+    const EMAIL_FROM_NAME = 'Serato Web Mailer';
+
 
     /**
      * @var boolean
@@ -58,7 +58,7 @@ class Mailer extends SendGrid
         }
             //Traverse array and get the data for students aged less than 20
         foreach ($templatesJsonData as $key => $value) {
-            if ($key == $templateName) {
+            if ($key === $templateName) {
                 return $value;
             }
         }
@@ -74,29 +74,19 @@ class Mailer extends SendGrid
      */
     public function validateTemplateParams(Array $templateParams, Array $emailOptTemplateParams): array
     {
-        $validTemplateParams = array();
-        foreach ($templateParams as $key => $value) {
-            if (in_array($key, $emailOptTemplateParams)) {
-                $validTemplateParams[$key] = $value;
+        foreach ($emailOptTemplateParams as $param) {
+            if (! key_exists($param, $templateParams)) {
+                throw new Exception('Invalid ' . $param);
             }
         }
-        return $validTemplateParams;
-    }
 
-    /**
-     * Check template language is valid
-     *
-     * @param string $language
-     * @param array $emailLanguageOptions
-     * @return bool
-     */
-    public function validateEmailLanguage(String $language, Array $emailLanguageOptions): bool
-    {
-        if (isset($emailLanguageOptions[$language]) && isset($emailLanguageOptions[$language]['template_id'])) {
-            return true;
-        } else {
-            return false;
+        foreach ($templateParams as $key => $value) {
+            if (!is_string($key) || !is_string($value)) {
+                throw new Exception('Invalid parameter ' . $key);
+            }
         }
+
+        return $templateParams;
     }
 
     /**
@@ -115,16 +105,32 @@ class Mailer extends SendGrid
         $emailOptions = $this->fetchEmailOptionsByTemplateName($templateName);
         $validTemplateParams = $this->validateTemplateParams($templateParams, $emailOptions['template_params']);
 
-        $emailLanguage = $this->validateEmailLanguage($language, $emailOptions['languages']) ? $language : 'en';
+        $emailLanguage = $language ? $language : 'en';
         $templateId = $emailOptions['languages'][$emailLanguage]['template_id'];
-        $categories = array_merge(
+        $categories = array_unique(array_merge(
             $emailOptions['languages'][$emailLanguage]['categories'],
             $emailOptions['categories']
-        );
+        ));
 
         // get a configured Mail object
         $mail = new Mail();
-        $mail->setFrom(self::FROM_EMAIL, self::FROM_NAME);
+
+        $emailFromEmail = self::EMAIL_FROM;
+        $emailFromEmailName = self::EMAIL_FROM_NAME;
+        if ($emailOptions['email_from'] && $emailOptions['email_from']['from']) {
+            $emailFromEmail = $emailOptions['email_from']['from']['email'];
+            $emailFromEmailName = $emailOptions['email_from']['from']['name'];
+        };
+        $mail->setFrom($emailFromEmail, $emailFromEmailName);
+
+        $replyToEmail = self::EMAIL_FROM;
+        $replyToEmailName = self::EMAIL_FROM_NAME;
+        if ($emailOptions['email_from'] && $emailOptions['email_from']['reply_to']) {
+            $replyToEmail = $emailOptions['email_from']['reply_to']['email'];
+            $replyToEmailName = $emailOptions['email_from']['reply_to']['name'];
+        };
+        $mail->setReplyTo($replyToEmail, $replyToEmailName);
+
         foreach ($validTemplateParams as $key => $value) {
               $mail->addSubstitution($key, $value);
         }

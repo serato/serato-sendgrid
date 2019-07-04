@@ -59,6 +59,8 @@ class MailerTest extends TestCase
     /**
      * Test template params are valid with invalid params
      * @group mail
+     *
+     *  @expectedException \Exception
      */
     public function testValidateTemplateParamsWithInvalidParams()
     {
@@ -69,35 +71,7 @@ class MailerTest extends TestCase
 
         $validTemplateParams = $mail->validateTemplateParams($templateParams, $mailOptions['template_params']);
 
-        $this->assertEquals($validTemplateParams, ['plan_name'=>'DJ']);
-    }
-
-    /**
-     * Test template language are valid with valid language
-     * @group mail
-     */
-    public function testValidateEmailLanguageWithValidlanguage()
-    {
-        $language = 'en';
-
-        $mail = new Mailer(self:: FAKE_API_KEY, self::DISABLE_EMAIL_DELIVERY);
-        $mailOptions = $mail->fetchEmailOptionsByTemplateName(self::TEMPLATE_NAME);
-
-        $this->assertTrue($mail->validateEmailLanguage($language, $mailOptions['languages']));
-    }
-
-    /**
-     * Test template language are valid with invalid language
-     * @group mail
-     */
-    public function testValidateEmailLanguageWithInvalidlanguage()
-    {
-        $language = 'zh';
-
-        $mail = new Mailer(self:: FAKE_API_KEY, self::DISABLE_EMAIL_DELIVERY);
-        $mailOptions = $mail->fetchEmailOptionsByTemplateName(self::TEMPLATE_NAME);
-
-        $this->assertNotTrue($mail->validateEmailLanguage($language, $mailOptions['languages']));
+        $this->assertNull($validTemplateParams);
     }
 
     /**
