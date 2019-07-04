@@ -11,7 +11,6 @@ class MailerTest extends TestCase
     const NOT_DISABLE_EMAIL_DELIVERY = false;
     const DISABLE_EMAIL_DELIVERY = true;
     const TEMPLATE_NAME = 'studio-sub-voluntary-cancel';
-    const API_KEY = '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'; // real,not used
     const FAKE_API_KEY = 'fake-api-key';
 
 
