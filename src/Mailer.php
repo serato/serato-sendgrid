@@ -56,7 +56,6 @@ class Mailer extends SendGrid
             // $templatesJsonData is null because the json cannot be decoded
             throw new Exception('Invalid JSON file.');
         }
-            //Traverse array and get the data for students aged less than 20
         foreach ($templatesJsonData as $key => $value) {
             if ($key === $templateName) {
                 return $value;
