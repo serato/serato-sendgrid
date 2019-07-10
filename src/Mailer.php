@@ -15,7 +15,7 @@ class Mailer extends SendGrid
 {
     const EMAIL_FROM = 'no-reply@serato.com';
     const EMAIL_FROM_NAME = 'Serato Web Mailer';
-
+    const EMAIL_CONFIG_FILE_PATH = '/spec/email_config.json';
 
     /**
      * @var boolean
@@ -23,69 +23,87 @@ class Mailer extends SendGrid
     private $disableEmailDelivery = false;
 
     /**
+     * @var array
+     */
+    private $emailConfig;
+
+    /**
+     * @var Mail
+     */
+    private $mail;
+
+    /**
      * Overriding the constructor
      *
      * @param string $apiKey  Your Twilio SendGrid API Key.
+     * @param boolean $disableEmailDelivery  Optional flag for disabling the delivery
+     * @param string $emailConfigFilePath   Optional path for email configuration (mainly for testing purpose)
      * @param array  $options An array of options, currently only "host", "curl" and
      *                        "impersonateSubuser" are implemented.
-     * @param boolean $disableEmailDelivery
      */
-    public function __construct($apiKey, $disableEmailDelivery = false, $options = array())
-    {
+    public function __construct(
+        string $apiKey,
+        bool $disableEmailDelivery = false,
+        string $emailConfigFilePath = '',
+        array $options = array()
+    ) {
         $this->disableEmailDelivery = $disableEmailDelivery;
+        if ($emailConfigFilePath !== '') {
+            $configurationJson = file_get_contents($emailConfigFilePath);
+        } else {
+            $configurationJson = file_get_contents(__DIR__ . self::EMAIL_CONFIG_FILE_PATH);
+        }
+        if (is_string($configurationJson)) {
+            $this->emailConfig = json_decode($configurationJson, true);
+        }
+        if ($this->emailConfig === null || !is_array($this->emailConfig) || empty($this->emailConfig)) {
+            throw new Exception('SendGrid Mailer Exception - Invalid email configuration.');
+        }
         parent::__construct($apiKey, $options);
     }
 
     /**
-     * Fetch email information from email_config.json file by template name
+     * Returns email configuration for a specific template name
      *
      * @param string $templateName
      * @return array
      */
 
-    public function fetchEmailOptionsByTemplateName(String $templateName): array
+    public function getEmailConfigByName(String $templateName): array
     {
-        // Read JSON file
-        $templatesJson = file_get_contents(__DIR__ . '/spec/email_config.json');
-        //Decode JSON
-        $templatesJsonData = '';
-        if (is_string($templatesJson)) {
-            $templatesJsonData = json_decode($templatesJson, true);
-        }
-        if ($templatesJsonData === null) {
-            // $templatesJsonData is null because the json cannot be decoded
-            throw new Exception('Invalid JSON file.');
-        }
-        foreach ($templatesJsonData as $key => $value) {
-            if ($key === $templateName) {
-                return $value;
+        foreach ($this->getEmailConfig() as $name => $config) {
+            if ($name === $templateName) {
+                return $config;
             }
         }
-        throw new Exception('Invalid template name');
+        throw new Exception('SendGrid Mailer Exception - Invalid email template name.');
     }
 
     /**
-     * Check template params are valid
+     * Check template parameters are valid
      *
      * @param array $templateParams
      * @param array $emailOptTemplateParams
-     * @return array
+     * @return boolean
      */
-    public function validateTemplateParams(Array $templateParams, Array $emailOptTemplateParams): array
+    public function validateTemplateParams(Array $templateParams, Array $emailOptTemplateParams): bool
     {
-        foreach ($emailOptTemplateParams as $param) {
-            if (! key_exists($param, $templateParams)) {
-                throw new Exception('Invalid ' . $param);
-            }
-        }
-
         foreach ($templateParams as $key => $value) {
+            if (!in_array($key, $emailOptTemplateParams)) {
+                throw new Exception('SendGrid Mailer Exception - Invalid parameter: ' . $key);
+            }
             if (!is_string($key) || !is_string($value)) {
-                throw new Exception('Invalid parameter ' . $key);
+                throw new Exception('SendGrid Mailer Exception - Parameter should be string: "' . $key . '"');
             }
         }
 
-        return $templateParams;
+        foreach ($emailOptTemplateParams as $param) {
+            if (!array_key_exists($param, $templateParams)) {
+                throw new Exception('SendGrid Mailer Exception - Parameter "' . $param . '" is missing.');
+            }
+        }
+
+        return true;
     }
 
     /**
@@ -101,8 +119,8 @@ class Mailer extends SendGrid
         string $language,
         array $templateParams
     ):? Response {
-        $emailOptions = $this->fetchEmailOptionsByTemplateName($templateName);
-        $validTemplateParams = $this->validateTemplateParams($templateParams, $emailOptions['template_params']);
+        $emailOptions = $this->getEmailConfigByName($templateName);
+        $this->validateTemplateParams($templateParams, $emailOptions['template_params']);
 
         $emailLanguage = $language ? $language : 'en';
         $templateId = $emailOptions['languages'][$emailLanguage]['template_id'];
@@ -111,8 +129,7 @@ class Mailer extends SendGrid
             $emailOptions['categories']
         ));
 
-        // get a configured Mail object
-        $mail = new Mail();
+        $this->mail = new Mail();
 
         $emailFromEmail = self::EMAIL_FROM;
         $emailFromEmailName = self::EMAIL_FROM_NAME;
@@ -120,43 +137,54 @@ class Mailer extends SendGrid
             $emailFromEmail = $emailOptions['email_from']['from']['email'];
             $emailFromEmailName = $emailOptions['email_from']['from']['name'];
         };
-        $mail->setFrom($emailFromEmail, $emailFromEmailName);
+        $this->mail->setFrom($emailFromEmail, $emailFromEmailName);
 
-        $replyToEmail = self::EMAIL_FROM;
-        $replyToEmailName = self::EMAIL_FROM_NAME;
         if ($emailOptions['email_from'] && $emailOptions['email_from']['reply_to']) {
             $replyToEmail = $emailOptions['email_from']['reply_to']['email'];
             $replyToEmailName = $emailOptions['email_from']['reply_to']['name'];
+            $this->mail->setReplyTo($replyToEmail, $replyToEmailName);
         };
-        $mail->setReplyTo($replyToEmail, $replyToEmailName);
 
-        foreach ($validTemplateParams as $key => $value) {
-              $mail->addSubstitution($key, $value);
+        foreach ($templateParams as $key => $value) {
+              $this->mail->addSubstitution($key, $value);
         }
         foreach ($categories as $category) {
-            $mail->addCategory(new Category($category));
+            $this->mail->addCategory(new Category($category));
         }
-        $mail->addTo($recipientEmail, $recipientName);
-        $mail->setTemplateId($templateId);
+        $this->mail->addTo($recipientEmail, $recipientName);
+        $this->mail->setTemplateId($templateId);
         if (isset($emailOptions['recipients']) && isset($emailOptions['recipients']['bcc'])) {
             foreach ($emailOptions['recipients']['bcc'] as $bcc) {
-                $mail->addBcc(new Bcc($bcc));
+                $this->mail->addBcc(new Bcc($bcc));
             }
         }
         if (isset($emailOptions['recipients']) && isset($emailOptions['recipients']['cc'])) {
             foreach ($emailOptions['recipients']['cc'] as $cc) {
-                $mail->addCc(new Cc($cc));
+                $this->mail->addCc(new Cc($cc));
             }
         }
 
-        try {
-            // send mail
-            if ($this->disableEmailDelivery === true) {
-                return null;
-            }
-            return parent::send($mail);
-        } catch (Exception $e) {
-            echo 'Caught exception: ',  $e->getMessage(), '\n';
+        if ($this->disableEmailDelivery === true) {
+            return null;
         }
+        return parent::send($this->mail);
+    }
+
+    /**
+     * Returns the email configuration
+     * @return array
+     */
+    public function getEmailConfig()
+    {
+        return $this->emailConfig;
+    }
+
+    /**
+     * Returns the SendGrid Mail object
+     * @return Mail
+     */
+    public function getMail()
+    {
+        return $this->mail;
     }
 }
