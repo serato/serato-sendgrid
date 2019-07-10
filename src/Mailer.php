@@ -133,13 +133,13 @@ class Mailer extends SendGrid
 
         $emailFromEmail = self::EMAIL_FROM;
         $emailFromEmailName = self::EMAIL_FROM_NAME;
-        if ($emailOptions['email_from'] && $emailOptions['email_from']['from']) {
+        if (isset($emailOptions['email_from']) && isset($emailOptions['email_from']['from'])) {
             $emailFromEmail = $emailOptions['email_from']['from']['email'];
             $emailFromEmailName = $emailOptions['email_from']['from']['name'];
         };
         $this->mail->setFrom($emailFromEmail, $emailFromEmailName);
 
-        if ($emailOptions['email_from'] && $emailOptions['email_from']['reply_to']) {
+        if (isset($emailOptions['email_from']) && isset($emailOptions['email_from']['reply_to'])) {
             $replyToEmail = $emailOptions['email_from']['reply_to']['email'];
             $replyToEmailName = $emailOptions['email_from']['reply_to']['name'];
             $this->mail->setReplyTo($replyToEmail, $replyToEmailName);
