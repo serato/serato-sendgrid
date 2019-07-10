@@ -113,12 +113,12 @@ class MailerTest extends TestCase
             'studio-sub-voluntary-cancel',
             'test name',
             'test@test.com',
-            'en',
+            'fr',
             ['subscription_end_date' => '2016-12-05', 'plan_name' => 'name']
         );
         $mail = $mailer->getMail();
         // Asserting that the right categories are set
-        $expctedCategories = ['English', 'studio-sub-voluntary-cancel'];
+        $expctedCategories = ['French', 'studio-sub-voluntary-cancel'];
         foreach ($mail->getCategories() as $category) {
             $this->assertContains($category->getCategory(), $expctedCategories);
         }
@@ -129,6 +129,17 @@ class MailerTest extends TestCase
         $this->assertEquals('no-reply@serato.com', $mail->getReplyTo()->getEmail());
         $this->assertEquals('Serato Web Mailer', $mail->getReplyTo()->getName());
         // Asserting that the template id is correct
+        $this->assertEquals('template-id-for-french', $mail->getTemplateId()->getTemplateId());
+
+        # Checking that the undefined language results in English by default
+        $mailer->sendEmail(
+            'studio-sub-voluntary-cancel',
+            'test name',
+            'test@test.com',
+            '', // No language is provided
+            ['subscription_end_date' => '2016-12-05', 'plan_name' => 'name']
+        );
+        $mail = $mailer->getMail();
         $this->assertEquals('template-id-for-english', $mail->getTemplateId()->getTemplateId());
     }
 }

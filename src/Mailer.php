@@ -122,7 +122,7 @@ class Mailer extends SendGrid
         $emailOptions = $this->getEmailConfigByName($templateName);
         $this->validateTemplateParams($templateParams, $emailOptions['template_params']);
 
-        $emailLanguage = $language ? $language : 'en';
+        $emailLanguage = isset($emailOptions['languages'][$language]) ? $language : 'en';
         $templateId = $emailOptions['languages'][$emailLanguage]['template_id'];
         $categories = array_unique(array_merge(
             $emailOptions['languages'][$emailLanguage]['categories'],
