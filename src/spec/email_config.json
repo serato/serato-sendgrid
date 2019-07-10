@@ -1,56 +1,38 @@
 {
   "studio-sub-voluntary-cancel": {
     "description": "Email template for a voluntary studio subscription cancellation. The subscription will be active until the end of billing cycle.",
-    "email_from": {
-      "from": {
-        "email": "sales@serato.com",
-        "name": "Sales team email"
-      },
-      "reply_to": {
-        "email": "no-reply@serato.com",
-        "name": "Serato Web Mailer"
-      }
-    },
-    "recipients": {
-      "cc": [
-        "sales@serato.com"
-      ],
-      "bcc": [
-        "sales@serato.com"
-      ]
-    },
     "languages": {
       "en": {
         "template_id": "d-8146e370bca14acf955bf1df39d8d93f",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
       "subscription_end_date",
       "plan_name"
     ],
-    "categories": []
+    "categories": ["studio-sub-voluntary-cancel"]
   },
   "dj-sub-voluntarily-cancel": {
     "description": "Email template for a voluntary dj subscription cancellation. The subscription will be active until the end of billing cycle.",
     "languages": {
       "en": {
         "template_id": "d-67a2956be8a140b7adb302f91cfc3d6a",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
       "subscription_end_date",
       "plan_name"
     ],
-    "categories": []
+    "categories": ["dj-sub-voluntarily-cancel"]
   },
   "studio-sub-pending-change": {
     "description": "Email template for a studio subscription change that takes affect when current billing cycle ends.",
     "languages": {
       "en": {
         "template_id": "d-17210a9b3710425e8ac41282b29da6bf",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -60,14 +42,14 @@
       "next_billing_date",
       "target_plan_billing_period"
     ],
-    "categories": []
+    "categories": ["studio-sub-pending-change"]
   },
   "dj-sub-pending-change": {
     "description": "Email template for a dj subscription change that takes affect when current billing cycle ends.",
     "languages": {
       "en": {
         "template_id": "d-16e85338f4a84a74822114b8362a861b",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -77,14 +59,14 @@
       "next_billing_date",
       "target_plan_billing_period"
     ],
-    "categories": []
+    "categories": ["dj-sub-pending-change"]
   },
   "dj-sub-immediate-change": {
     "description": "Email template for a dj subscription change that takes affect immediately.",
     "languages": {
       "en": {
         "template_id": "d-95bf3a84a1f6446f864c9593c5f50565",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -94,14 +76,14 @@
       "next_billing_date",
       "target_plan_billing_period"
     ],
-    "categories": []
+    "categories": ["dj-sub-immediate-change"]
   },
   "studio-sub-went-active": {
     "description": "Email template for a studio subscription that goes active.",
     "languages": {
       "en": {
         "template_id": "d-37885105de8a4afcbd9c999bd12050d5",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -109,14 +91,14 @@
       "billing_start_date",
       "billing_period"
     ],
-    "categories": []
+    "categories": ["studio-sub-went-active"]
   },
   "dj-pro-sub-went-active": {
     "description": "Email template for a dj pro subscription that goes active.",
     "languages": {
       "en": {
         "template_id": "d-0e273edeae574f4f86ccf88004116d44",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -124,14 +106,14 @@
       "billing_start_date",
       "billing_period"
     ],
-    "categories": []
+    "categories": ["dj-pro-sub-went-active"]
   },
   "dj-essentials-sub-went-active": {
     "description": "Email template for a dj essentials subscription that goes active.",
     "languages": {
       "en": {
         "template_id": "d-5d0c967bdd16492c8f189421745e942d",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -139,14 +121,14 @@
       "billing_start_date",
       "billing_period"
     ],
-    "categories": []
+    "categories": ["dj-essentials-sub-went-active"]
   },
   "dj-suite-sub-went-active": {
     "description": "Email template for a dj suite subscription that goes active.",
     "languages": {
       "en": {
         "template_id": "d-e56b5f5b6cf84df4a2d0842d5b3c77e0",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -154,14 +136,14 @@
       "billing_start_date",
       "billing_period"
     ],
-    "categories": []
+    "categories": ["dj-suite-sub-went-active"]
   },
   "dj-expansion-packs-sub-went-active": {
     "description": "Email template for a dj expansion packs subscription that goes active.",
     "languages": {
       "en": {
         "template_id": "d-3e62b9906edb4fc596f732fcd1177923",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
@@ -169,95 +151,95 @@
       "billing_start_date",
       "billing_period"
     ],
-    "categories": []
+    "categories": ["dj-expansion-packs-sub-went-active"]
   },
   "dj-sub-explicit-cancel-in-past-due": {
     "description": "Email template for a past-due dj subscription that is explicitly cancelled.",
     "languages": {
       "en": {
         "template_id": "d-3639eb1bf91f46e883c966f876481063",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
       "plan_name"
     ],
-    "categories": []
+    "categories": ["dj-sub-explicit-cancel-in-past-due"]
   },
   "dj-sub-first-payment-declined": {
     "description": "Email template for a dj subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
         "template_id": "d-203663fedc0944da80250520deae2cd7",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
       "next_billing_date"
     ],
-    "categories": []
+    "categories": ["dj-sub-first-payment-declined"]
   },
-  "studio-sub-first-payment-declined ": {
+  "studio-sub-first-payment-declined": {
     "description": "Email template for a studio subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
         "template_id": "d-21879c0f45e049fdb37a7b609a5d541c",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
       "next_billing_date"
     ],
-    "categories": []
+    "categories": ["studio-sub-first-payment-declined"]
   },
   "dj-sub-second-payment-declined": {
     "description": "Email template for a dj subscription when a recurring payment fails for the second time.",
     "languages": {
       "en": {
         "template_id": "d-a1ec3a08d96e46c0a8e373ce47b67f7e",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [],
-    "categories": []
+    "categories": ["dj-sub-second-payment-declined"]
   },
   "studio-sub-second-payment-declined": {
     "description": "Email template for a studio subscription when a recurring payment fails for the second time.",
     "languages": {
       "en": {
         "template_id": "d-6ea59e567530426a8ee57382a36a5f54",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [],
-    "categories": []
+    "categories": ["studio-sub-second-payment-declined"]
   },
   "dj-sub-third-payment-declined": {
     "description": "Email template for a dj subscriptiona when a recurring payment fails for the third time.",
     "languages": {
       "en": {
         "template_id": "d-e9da2bf3d86946c4b1c38094c1918c95",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
       "plan_name",
       "product_id"
     ],
-    "categories": []
+    "categories": ["dj-sub-third-payment-declined"]
   },
   "studio-sub-third-payment-declined": {
     "description": "Email template for a studio subscription when a recurring payment fails for the third time.",
     "languages": {
       "en": {
         "template_id": "d-42feab22f62647099b65b0ac1557b580",
-        "categories": []
+        "categories": ["English"]
       }
     },
     "template_params": [
       "plan_name",
       "product_id"
     ],
-    "categories": []
+    "categories": ["studio-sub-third-payment-declined"]
   }
 }
