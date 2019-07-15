@@ -71,10 +71,8 @@ class Mailer extends SendGrid
 
     public function getEmailConfigByName(String $templateName): array
     {
-        foreach ($this->getEmailConfig() as $name => $config) {
-            if ($name === $templateName) {
-                return $config;
-            }
+        if (array_key_exists($templateName, $this->getEmailConfig())) {
+            return $this->getEmailConfig()[$templateName];
         }
         throw new Exception('SendGrid Mailer Exception - Invalid email template name.');
     }
