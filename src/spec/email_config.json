@@ -1,10 +1,34 @@
 {
   "studio-sub-voluntary-cancel": {
-    "description": "Email template for a voluntary studio subscription cancellation. The subscription will be active until the end of billing cycle.",
+    "description": "Email template for a voluntary Studio subscription cancellation. The subscription will be active until the end of billing cycle.",
     "languages": {
       "en": {
         "template_id": "d-8146e370bca14acf955bf1df39d8d93f",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-019809b51b134a31a831b8490c8fc27e",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-ba238490bc8b47c4925ae8e155832a45",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-7804034ab9d84789a5fcec9d9a2f38ac",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-e398063ef4cf4b9583984d494115dbb1",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-c1a08135c32a45c2bb31daaf34644082",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-ca32bb90d176494badcced7c7ababb9a",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -14,11 +38,35 @@
     "categories": ["studio-sub-voluntary-cancel"]
   },
   "dj-sub-voluntarily-cancel": {
-    "description": "Email template for a voluntary dj subscription cancellation. The subscription will be active until the end of billing cycle.",
+    "description": "Email template for a voluntary DJ subscription cancellation. The subscription will be active until the end of billing cycle.",
     "languages": {
       "en": {
         "template_id": "d-67a2956be8a140b7adb302f91cfc3d6a",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-3b2ae224f87541afb51a5a90c2c96592",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-70d39849b3e04af6b6115ac5cff8be96",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-6e834d6771284e5aafc8c6c6576680cf",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-09098951ebff42ecbc78bd7ed351b2d2",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-a33c546e83d64d96b4df73dd72ae1a07",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-d7f807a827a941609c679164a6cb4de6",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -28,11 +76,35 @@
     "categories": ["dj-sub-voluntarily-cancel"]
   },
   "studio-sub-pending-change": {
-    "description": "Email template for a studio subscription change that takes affect when current billing cycle ends.",
+    "description": "Email template for a Studio subscription change that takes affect when current billing cycle ends.",
     "languages": {
       "en": {
         "template_id": "d-17210a9b3710425e8ac41282b29da6bf",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-ceadfbba578f4fe0b1fad58b720eb935",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-dc336e24955443dba7f76d7657463dc1",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-1a43dab5cc534e3fb00ef6a8aac7d656",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-4e3b074ab024458c8f103ede8bd40ec4",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-b063e21b505f46759948da1b86202bfe",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-d12d455da2ff475e8f068f07ce530cc1",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -45,11 +117,35 @@
     "categories": ["studio-sub-pending-change"]
   },
   "dj-sub-pending-change": {
-    "description": "Email template for a dj subscription change that takes affect when current billing cycle ends.",
+    "description": "Email template for a DJ subscription change that takes affect when current billing cycle ends.",
     "languages": {
       "en": {
         "template_id": "d-16e85338f4a84a74822114b8362a861b",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-c9c48777d7634f088d6ba7de66a99af9",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-f8db94b92713456eaf541e018b2a4194",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-319006411f3843fa8327272e4249e0f9",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-7b6b0ecfc1d848c480e2f067e6cc5589",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-c18173ce94af48d08c3959b509b88009",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-024c18590ebf4bf09c40f9f6d1156f89",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -62,11 +158,35 @@
     "categories": ["dj-sub-pending-change"]
   },
   "dj-sub-immediate-change": {
-    "description": "Email template for a dj subscription change that takes affect immediately.",
+    "description": "Email template for a DJ subscription change that takes affect immediately.",
     "languages": {
       "en": {
         "template_id": "d-95bf3a84a1f6446f864c9593c5f50565",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-264044d6338c4d2a8f4f22d986b10abb",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-609e2e6987cb477d9a59de34d97ddd2f",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-dc86b2b0dc7e4f3e9dc7407937da93ed",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-a5732a05247242c7b23ede9d9e04a5ca",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-d0c7be4f651141319941b05e8cedd2b5",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-f036d27a62144f6c837a4655bb499536",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -84,6 +204,30 @@
       "en": {
         "template_id": "d-37885105de8a4afcbd9c999bd12050d5",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-8790ca67aae949e7b4cf4ab8c5eb4b31",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-9acb2ed7a9c0484a8ff400c6ee1b71ff",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-63a7afa631414b4e9520decafc8a8d13",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-8291c320d4f04fd2ad9844e273d126a4",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-447f61b19dc94250b3199840bbaecc71",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-b666925e87b64fd4a43368d003434a6d",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -99,6 +243,30 @@
       "en": {
         "template_id": "d-0e273edeae574f4f86ccf88004116d44",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-507ae9ef62074dcd9e1083c8033d9d9b",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-3d0fceed72004c27ac0c6e7d81a58cfc",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-f4009b5749fd4d749b583495a646f820",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-8e422b426687402c88c558c6cf34feac",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-ee0ee08a5c174a879c30e796bf028b96",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-2ed06012d22d41e68999673489e698a1",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -114,6 +282,30 @@
       "en": {
         "template_id": "d-5d0c967bdd16492c8f189421745e942d",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-deb2f08b9af54a1eafe664a5177bb048",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-1285b60858f84b1a9c94351c0d03a361",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-2ad408ebe7574e5aa09b0a555f1e897d",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-19dd9670bc764754b0ff1e7ed65431da",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-d3bc66f131204f1695179b9bff414ec4",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-eb9cbbf22be2435fafd21fdca5d52e6a",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -124,11 +316,35 @@
     "categories": ["dj-essentials-sub-went-active"]
   },
   "dj-suite-sub-went-active": {
-    "description": "Email template for a dj suite subscription that goes active.",
+    "description": "Email template for a DJ Suite subscription that goes active.",
     "languages": {
       "en": {
         "template_id": "d-e56b5f5b6cf84df4a2d0842d5b3c77e0",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-082685af1e184eee9637f581818afafe",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-1ff55010806e41c18f9fbb7b6cdd7a35",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-e36d2ede19184bf7ace93eb5996237ed",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-f509d621839d4d40a9b45f529eb47696",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-c2a66cc8755b45288aa0b4c517b13afe",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-c6dd39cb61a548c78fb7c05a49796faa",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -139,11 +355,35 @@
     "categories": ["dj-suite-sub-went-active"]
   },
   "dj-expansion-packs-sub-went-active": {
-    "description": "Email template for a dj expansion packs subscription that goes active.",
+    "description": "Email template for a DJ Expansion Packs subscription that goes active.",
     "languages": {
       "en": {
         "template_id": "d-3e62b9906edb4fc596f732fcd1177923",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-5929754660c04d91a313d60eecfc6716",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-0214d3b27d534123b50cbbb70f48c7e1",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-86d436ae88604c8b8186060ed0ebb09f",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-6ef4642a142142baba1a4e777e23a41d",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-b06fdb6590c548e0911ed81be680b5c0",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-a2f544ad0a0c4c298a3670b896eba512",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -154,11 +394,35 @@
     "categories": ["dj-expansion-packs-sub-went-active"]
   },
   "dj-sub-explicit-cancel-in-past-due": {
-    "description": "Email template for a past-due dj subscription that is explicitly cancelled.",
+    "description": "Email template for a past-due DJ subscription that is explicitly cancelled.",
     "languages": {
       "en": {
         "template_id": "d-3639eb1bf91f46e883c966f876481063",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-862f66aace3d419baf7931604ba53925",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-85dfe31197a84d6ab040fa42aa1d8d0f",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-304a6fe22921401797dc8f7ded18e6d0",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-16a7e35b52884b8f96f36d2574f2c657",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-5847fc7e076d4445b7499bbed9917f91",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-8560c699d1a744cea71b8990d28c2eed",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -167,11 +431,35 @@
     "categories": ["dj-sub-explicit-cancel-in-past-due"]
   },
   "dj-sub-first-payment-declined": {
-    "description": "Email template for a dj subscription when a recurring payment fails for the first time.",
+    "description": "Email template for a DJ subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
         "template_id": "d-203663fedc0944da80250520deae2cd7",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-5d7c337ef6a143bd9b56f659d4edbe03",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-feac5414ec4545dfaf4b0fca8937272b",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-fbc6233652974b24808390c5fe213973",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-602011f5d11842ee8bf3bac60ffa2192",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-686a66f5092b4d8bb2fcd7dd348d365e",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-45611fc85f794349acf9bd07dfa10070",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -180,11 +468,35 @@
     "categories": ["dj-sub-first-payment-declined"]
   },
   "studio-sub-first-payment-declined": {
-    "description": "Email template for a studio subscription when a recurring payment fails for the first time.",
+    "description": "Email template for a Studio subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
         "template_id": "d-21879c0f45e049fdb37a7b609a5d541c",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-69613f8c97824d81a5e785d5455aacb9",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-16c741519df946a089a6c31a30f505e4",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-cf43793bfb814ca482d3c47fbf9ca400",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-6ea290a1cd6a41abb8bac7460e45d10b",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-f996c55c855842c09199d39dfd9c439d",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-182bff3536f5445ab783ec2ab171be76",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -193,11 +505,35 @@
     "categories": ["studio-sub-first-payment-declined"]
   },
   "dj-sub-second-payment-declined": {
-    "description": "Email template for a dj subscription when a recurring payment fails for the second time.",
+    "description": "Email template for a DJ subscription when a recurring payment fails for the second time.",
     "languages": {
       "en": {
         "template_id": "d-a1ec3a08d96e46c0a8e373ce47b67f7e",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-6dc8c33a695048a4a388b2af535668d6",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-c2fa87e80e5c4386b2c5315e76d26b4d",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-6cba2c0805324bf28ace792bb5857382",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-a9ffe8e76dca49abac8b237c70df17ed",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-fcd22d61b980425eb4eb9a04973fe066",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-6ce31fb4388e464fa8abb88b45ed2800",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [],
@@ -209,6 +545,30 @@
       "en": {
         "template_id": "d-6ea59e567530426a8ee57382a36a5f54",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-3e00a163da1c4abe916416166cb8de95",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-34c8be67212c4dfbb914278fa2ebd654",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-8a49c2edd3834473afa5b867eda30236",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-851fde3adff94749a2ba114305ad31ec",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-31c790d02bdd40ddbd9cf458273a71cd",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-8c38ee66d60745a79d8eac7db1a39ff9",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [],
@@ -220,6 +580,30 @@
       "en": {
         "template_id": "d-e9da2bf3d86946c4b1c38094c1918c95",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-21cd6b67a617454581d49f60f1453f80",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-bce30bc37891448a995ff8dc70aa036f",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-2d3c95e5a97647d8893d1ef31f3c5854",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-fd518a121d9346c2a4cca8cc9b77db62",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-33dd3cb3530244d089296505e1ce671e",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-fee563ed13c14fd194d03fd1a6ee0d17",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -229,17 +613,77 @@
     "categories": ["dj-sub-third-payment-declined"]
   },
   "studio-sub-third-payment-declined": {
-    "description": "Email template for a studio subscription when a recurring payment fails for the third time.",
+    "description": "Email template for a Studio subscription when a recurring payment fails for the third time.",
     "languages": {
       "en": {
         "template_id": "d-42feab22f62647099b65b0ac1557b580",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-91ca5db0501e4eaca114994658fde5d0",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-f624e5dfc9cb425f8601a9cb6bfe16e9",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-d5f9612007e2443cbb27a74ddf3aba10",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-95c1c9b47c124010963153488c702af0",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-6f89c37fe4434c098a2986b7837cd12a",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-a2296dcdb80e4fb1bee80a66e70891c4",
+        "categories": ["Chinese"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-sub-third-payment-declined"]
+  },
+  "sound-pack-download-link": {
+    "description": "Email template for SoundPack download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-48dcc0214a984a9b9ab9e4fc6e0735ef",
+        "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-5f7b76fd00fb40c6afede74b7094560d",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-0ee03f534c504494a8c4e81a50a2736f",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-82753bfe34c349adb29d7f76b69ed32e",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-0fc04d44ba1d4a6e9ae3dbe2b45701ab",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-d46d45159ff54faaaa27265058421584",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-7b6916b46f694815b69ea034adbb5d56",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
-      "plan_name",
-      "product_id"
+      "soundpack_name",
+      "download_link",
+      "image_path"
     ],
-    "categories": ["studio-sub-third-payment-declined"]
+    "categories": ["sound-pack-download-link"]
   }
 }
