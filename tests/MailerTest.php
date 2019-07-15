@@ -22,16 +22,27 @@ class MailerTest extends TestCase
         $mailer = new Mailer(self::FAKE_API_KEY, true);
         $emailOptions = $mailer->getEmailConfig();
 
-        # Check that we have 17 email templates.
+        # Check number of email templates
         # Change this number when a new template is added
-        $this->assertEquals(17, count($emailOptions));
+        $this->assertEquals(18, count($emailOptions));
+        $templateIds = [];
 
         foreach ($emailOptions as $templateName => $config) {
             # Check that all templates have at least "en" for language
             $this->assertTrue(array_key_exists('en', $config['languages']));
             foreach ($config['languages'] as $lang => $langOptions) {
                 # Check that there is a template id for all languages
-                $this->assertTrue(!is_null($langOptions['template_id']));
+                $this->assertTrue(
+                    !is_null($langOptions['template_id']) && !empty($langOptions['template_id']),
+                    "Template ID is missing for '$lang' in '$templateName'"
+                );
+
+                # Check that all templates are unique
+                $this->assertFalse(
+                    in_array($langOptions['template_id'], $templateIds),
+                    "The TemplateId in {$templateName} is repeated: {$langOptions['template_id']}"
+                );
+                $templateIds[] = $langOptions['template_id'];
             }
         }
     }
