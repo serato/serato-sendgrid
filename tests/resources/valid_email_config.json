@@ -1,0 +1,38 @@
+{
+  "studio-sub-voluntary-cancel": {
+    "description": "Email template for a voluntary studio subscription cancellation. The subscription will be active until the end of billing cycle.",
+    "email_from": {
+      "from": {
+        "email": "sales@serato.com",
+        "name": "Sales team email"
+      },
+      "reply_to": {
+        "email": "no-reply@serato.com",
+        "name": "Serato Web Mailer"
+      }
+    },
+    "recipients": {
+      "cc": [
+        "support@serato.com"
+      ],
+      "bcc": [
+        "web@serato.com"
+      ]
+    },
+    "languages": {
+      "en": {
+        "template_id": "template-id-for-english",
+        "categories": ["English"]
+      },
+      "fr": {
+        "template_id": "template-id-for-french",
+        "categories": ["French"]
+      }
+    },
+    "template_params": [
+      "subscription_end_date",
+      "plan_name"
+    ],
+    "categories": ["studio-sub-voluntary-cancel"]
+  }
+}
