@@ -1,6 +1,6 @@
 # Serato SendGrid [![Build Status](https://img.shields.io/travis/serato/serato-sendgrid.svg)](https://travis-ci.org/serato/serato-sendgrid)
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/serato/serato-sendgrid.svg)](https://packagist.org/packages/serato/serato-sendgrid)
+[![Latest Stable Version](https://img.shields.io/packagist/v/serato/serato-sendgrid.svg)](https://packagist.org/packages/serato/sendgrid)
 
 A PHP library for sending transactional emails using SendGrid
 
