@@ -5,8 +5,6 @@ php:
 cache:
   directories:
   - "$HOME/.composer/cache"
-env:
-  secure: "Axq1E18HB16+s+pMewnICMGzpFeRcRihdlJp0SoJmGVHUJmy4LUS9g8mQx7wASO8roL1x6muAZWgP/JmRDD5edrPycMZ2gKPayBKr3lCT1heADXwgLnrib/JU3qtlzGwsBaFW9vQSsWlNDDW13Et24p6+q0cda4OgSm9ehRe45fg5Vp9pvm8bUX87/C37s5Et6kZNFcQf8jLXo2IQRbnM2L1klfAg3kohtX0dg53oADOl1QNc7wccl/7D1AEFXShhrusgBhosVu4sZv9uzFz6Spmfjzmwfe1Izso5EXy9nuBAUKZpvXXo5NbbN7CRX0Y0bwm+r7Idxu6fR4Zwi5MMfKPLb1U8t4DWPWGj36QAf/PXcNa5dOgqfEfi4Uduet5mCo4+c05Nu2f23hQH89Jzxf8IIuqQGMamTg8AccixFrw74lL5fgmEPw2yGuwfxKq4F92epx0GMfvsoWjwGoDEgXAKPFl2tLdb46K7n2o0BRBUVO8OF46Mrt8MlgqoP6nsN4yYvm+B8Mo3cHf/XmaAMEoASlNPCm2GZ7kcB79R7jpQUIwV3oEViXHAmGc0OrdAAETNSDiZTJkaxZuNEjZUvgz987xfVtN2NgALjtJVQN1HoNvj4aFijARAxCjM0B53q8wZcjn5fDby/WYoKAIRSGvIdCdHdaueIJLaxLAc4I="
 branches:
   only:
   - master
@@ -18,19 +16,3 @@ script:
 - "./vendor/bin/phpstan analyse"
 - php vendor/bin/phpunit
 - "./vendor/bin/phpcs"
-after_success:
-- "./vendor/bin/apigen generate src --destination docs"
-addons:
-  artifacts:
-    s3_region: us-east-1
-    target_paths: "$TRAVIS_REPO_SLUG/$TRAVIS_BRANCH"
-    paths:
-    - "./docs"
-notifications:
-  slack:
-    rooms:
-      secure: UViA/AzWGBfiyy+lLhx/iaJEk+eRYcLkFKELxzeV5SOYVI/wISXf8afhaXjptDEZJ4eitsy865ZaFPgXqo3/CJX7pSRKiOtiqgMgDFoIOlnkTLK11rWrBJwvf9o3LFdtgXVUPYol1iD7yDgxtWi005lcorinrPM3ptKOyy2KByFSK/4V6Zruw6cOIaKer+OZadKJgTd7snMkQY1UKDovSHS0x2a26jZXJ3cuN8CczGd/OvTnONHXnJgMTsBXHWyTC8i1nAnILTAFXruzdEAsUhS+mG1GZdNNID0SGT1zmUSwGqZ81nbUkL6XulBDn950tMMyBV6pQcGaXZhq/HbwMrri1QO+pLZnn7oKu/tvBvylF4/Y8tTaOcjMSMm2jsJJNABdabxdNEHGjGYC9eLYUink5V3wv3K7RHCfClQEeNxoSasZApmJ1HIPXTFOxV00oLNZrsiucN0Gr8ek0OgfeNheOjmBzFTVC9fzi5tBhY3r462xXby0K2PIqbF9D3htONRxPRTnttMk3LxYD0jMq9gb5TBfSJZ4HNGIQnjHxKWo3aWjuqTnn7QPAkJfrkJlhNg8GhSPlbtYcpUJ+NWLYJc/plOLqqAdYrdX5q/BEMUgf6hJqNcO3XJS+4xjTzbnsoAQoDoMmqJgR9Z+GbIYemVq0KccgjGDmErJtyW/rWo=
-  on_success: change
-  on_failure: always
-after_script:
-- "php ./docversions.php"
