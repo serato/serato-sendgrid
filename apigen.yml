@@ -1,0 +1,6 @@
+parameters:
+    visibility_levels: [public, protected]
+    annotation_groups: [todo, deprecated]
+    title: "PHP SENDGRID"
+    base_url: http://docs.serato.net/serato/serato-sendgrid/master/
+    overwrite: true
