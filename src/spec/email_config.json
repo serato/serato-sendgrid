@@ -393,6 +393,36 @@
     ],
     "categories": ["dj-expansion-packs-sub-went-active"]
   },
+  "studio-sub-went-active-from-past-due": {
+    "description": "Email template for a past-due studio subscription that goes active.",
+    "languages": {
+      "en": {
+        "template_id": "d-5d7b13b5900a45e493c267f254452476",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "current_plan_name",
+      "target_plan_billing_period",
+      "next_billing_date"
+    ],
+    "categories": ["studio-sub-went-active-from-past-due"]
+  },
+  "dj-sub-went-active-from-past-due": {
+    "description": "Email template for a past-due dj pro subscription that goes active.",
+    "languages": {
+      "en": {
+        "template_id": "d-8bd6a9a431a9439e80d711fdba8780c7",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "current_plan_name",
+      "target_plan_billing_period",
+      "next_billing_date"
+    ],
+    "categories": ["dj-sub-went-active-from-past-due"]
+  },
   "dj-sub-explicit-cancel-in-past-due": {
     "description": "Email template for a past-due DJ subscription that is explicitly cancelled.",
     "languages": {
