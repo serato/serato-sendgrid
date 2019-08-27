@@ -408,7 +408,7 @@
     ],
     "categories": ["studio-sub-went-active-from-past-due"]
   },
-  "dj-pro-sub-went-active-from-past-due": {
+  "dj-sub-went-active-from-past-due": {
     "description": "Email template for a past-due dj pro subscription that goes active.",
     "languages": {
       "en": {
