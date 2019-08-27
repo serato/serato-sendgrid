@@ -421,7 +421,7 @@
       "target_plan_billing_period",
       "next_billing_date"
     ],
-    "categories": ["dj-pro-sub-went-active-from-past-due"]
+    "categories": ["dj-sub-went-active-from-past-due"]
   },
   "dj-sub-explicit-cancel-in-past-due": {
     "description": "Email template for a past-due DJ subscription that is explicitly cancelled.",
