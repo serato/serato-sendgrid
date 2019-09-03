@@ -715,5 +715,83 @@
       "image_path"
     ],
     "categories": ["sound-pack-download-link"]
+  },
+  "studio-mobile-download-app": {
+    "description": "Email template for Studio - Mobile Download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-77b8ba7cb4e347868f651d65815f2586",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "download_link"
+    ],
+    "categories": ["studio-mobile-download-app"]
+  },
+  "sample-mobile-download-app": {
+    "description": "Email template for Sample - Mobile Download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-9a4699657cb44a03b4949128490cd669",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "download_link"
+    ],
+    "categories": ["sample-mobile-download-app"]
+  },
+  "pro-mobile-download-app": {
+    "description": "Email template for DJ Pro - Mobile Download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-68ce15278586469bab7808953edbe65b",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "download_link"
+    ],
+    "categories": ["pro-mobile-download-app"]
+  },
+  "lite-mobile-download-app": {
+    "description": "Email template for DJ Lite - Mobile Download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-64a960729c4444048f59aa06f23bcc5f",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "download_link"
+    ],
+    "categories": ["lite-mobile-download-app"]
+  },
+  "pnt-pro-mobile-download-app": {
+    "description": "Email template for Pitch 'n Time Pro - Mobile Download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-28c44c55ca094f1d9c499175080b5c76",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "download_link"
+    ],
+    "categories": ["pnt-pro-mobile-download-app"]
+  },
+  "pnt-le-mobile-download-app": {
+    "description": "Email template for Pitch 'n Time LE - Mobile Download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-6de80a3929334d24ba237b4e936051a5",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "download_link"
+    ],
+    "categories": ["pnt-le-mobile-download-app"]
   }
 }
