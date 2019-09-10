@@ -795,7 +795,7 @@
     "categories": ["pnt-le-mobile-download-app"]
   },
   "welcome-to-studio-for-opt-out-trial-user": {
-    "description": "Email template for Backstage opt-outs.",
+    "description": "Email template for studio when a user joins opt-out trial.",
     "languages": {
       "en": {
         "template_id": "d-cfea464b2676466cb13db577f0626fb6",
