@@ -793,5 +793,16 @@
       "download_link"
     ],
     "categories": ["pnt-le-mobile-download-app"]
+  },
+  "backstage-opt-outs": {
+    "description": "Email template for Backstage opt-outs.",
+    "languages": {
+      "en": {
+        "template_id": "d-cfea464b2676466cb13db577f0626fb6",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["backstage-opt-outs"]
   }
 }
