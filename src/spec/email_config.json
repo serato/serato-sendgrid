@@ -794,7 +794,7 @@
     ],
     "categories": ["pnt-le-mobile-download-app"]
   },
-  "backstage-opt-outs": {
+  "welcome-to-studio-for-opt-out-trial-user": {
     "description": "Email template for Backstage opt-outs.",
     "languages": {
       "en": {
@@ -803,6 +803,6 @@
       }
     },
     "template_params": [],
-    "categories": ["backstage-opt-outs"]
+    "categories": ["welcome-to-studio-for-opt-out-trial-user"]
   }
 }
