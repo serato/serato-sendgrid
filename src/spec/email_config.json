@@ -793,5 +793,16 @@
       "download_link"
     ],
     "categories": ["pnt-le-mobile-download-app"]
+  },
+  "welcome-to-studio-for-opt-out-trial-user": {
+    "description": "Email template for studio trial when a user is opted-out.",
+    "languages": {
+      "en": {
+        "template_id": "d-cfea464b2676466cb13db577f0626fb6",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["welcome-to-studio-for-opt-out-trial-user"]
   }
 }
