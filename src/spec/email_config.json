@@ -804,5 +804,18 @@
     },
     "template_params": [],
     "categories": ["welcome-to-studio-for-opt-out-trial-user"]
+  },
+  "welcome-to-studio-izotope-code": {
+    "description": "Email template to send iZotope code for the first-time studio subscribers",
+    "languages": {
+      "en": {
+        "template_id": "d-96ef3d87542c401eb77e1c1259f07bb7",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "izotope_code"
+    ],
+    "categories": ["welcome-to-studio-izotope-code"]
   }
 }

@@ -24,7 +24,7 @@ class MailerTest extends TestCase
 
         # Check number of email templates
         # Change this number when a new template is added
-        $this->assertEquals(27, count($emailOptions));
+        $this->assertEquals(28, count($emailOptions));
         $templateIds = [];
 
         foreach ($emailOptions as $templateName => $config) {
