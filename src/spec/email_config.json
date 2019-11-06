@@ -31,7 +31,10 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["subscription_end_date", "plan_name"],
+    "template_params": [
+      "subscription_end_date",
+      "plan_name"
+    ],
     "categories": ["studio-sub-voluntary-cancel"]
   },
   "dj-sub-voluntarily-cancel": {
@@ -66,7 +69,10 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["subscription_end_date", "plan_name"],
+    "template_params": [
+      "subscription_end_date",
+      "plan_name"
+    ],
     "categories": ["dj-sub-voluntarily-cancel"]
   },
   "studio-sub-pending-change": {
@@ -224,7 +230,11 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["plan_name", "billing_start_date", "billing_period"],
+    "template_params": [
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
+    ],
     "categories": ["studio-sub-went-active"]
   },
   "dj-pro-sub-went-active": {
@@ -259,7 +269,11 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["plan_name", "billing_start_date", "billing_period"],
+    "template_params": [
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
+    ],
     "categories": ["dj-pro-sub-went-active"]
   },
   "dj-essentials-sub-went-active": {
@@ -294,7 +308,11 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["plan_name", "billing_start_date", "billing_period"],
+    "template_params": [
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
+    ],
     "categories": ["dj-essentials-sub-went-active"]
   },
   "dj-suite-sub-went-active": {
@@ -329,7 +347,11 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["plan_name", "billing_start_date", "billing_period"],
+    "template_params": [
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
+    ],
     "categories": ["dj-suite-sub-went-active"]
   },
   "dj-expansion-packs-sub-went-active": {
@@ -364,7 +386,11 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["plan_name", "billing_start_date", "billing_period"],
+    "template_params": [
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
+    ],
     "categories": ["dj-expansion-packs-sub-went-active"]
   },
   "studio-sub-went-active-from-past-due": {
@@ -375,7 +401,11 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["current_plan_name", "target_plan_billing_period", "next_billing_date"],
+    "template_params": [
+      "current_plan_name",
+      "target_plan_billing_period",
+      "next_billing_date"
+    ],
     "categories": ["studio-sub-went-active-from-past-due"]
   },
   "dj-sub-went-active-from-past-due": {
@@ -386,7 +416,11 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["current_plan_name", "target_plan_billing_period", "next_billing_date"],
+    "template_params": [
+      "current_plan_name",
+      "target_plan_billing_period",
+      "next_billing_date"
+    ],
     "categories": ["dj-sub-went-active-from-past-due"]
   },
   "dj-sub-explicit-cancel-in-past-due": {
@@ -421,7 +455,9 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["plan_name"],
+    "template_params": [
+      "plan_name"
+    ],
     "categories": ["dj-sub-explicit-cancel-in-past-due"]
   },
   "dj-sub-first-payment-declined": {
@@ -456,7 +492,9 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["next_billing_date"],
+    "template_params": [
+      "next_billing_date"
+    ],
     "categories": ["dj-sub-first-payment-declined"]
   },
   "studio-sub-first-payment-declined": {
@@ -491,7 +529,9 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["next_billing_date"],
+    "template_params": [
+      "next_billing_date"
+    ],
     "categories": ["studio-sub-first-payment-declined"]
   },
   "dj-sub-second-payment-declined": {
@@ -596,7 +636,10 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["plan_name", "product_id"],
+    "template_params": [
+      "plan_name",
+      "product_id"
+    ],
     "categories": ["dj-sub-third-payment-declined"]
   },
   "studio-sub-third-payment-declined": {
@@ -666,7 +709,11 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": ["soundpack_name", "download_link", "image_path"],
+    "template_params": [
+      "soundpack_name",
+      "download_link",
+      "image_path"
+    ],
     "categories": ["sound-pack-download-link"]
   },
   "studio-mobile-download-app": {
@@ -677,7 +724,9 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["download_link"],
+    "template_params": [
+      "download_link"
+    ],
     "categories": ["studio-mobile-download-app"]
   },
   "sample-mobile-download-app": {
@@ -688,7 +737,9 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["download_link"],
+    "template_params": [
+      "download_link"
+    ],
     "categories": ["sample-mobile-download-app"]
   },
   "pro-mobile-download-app": {
@@ -699,7 +750,9 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["download_link"],
+    "template_params": [
+      "download_link"
+    ],
     "categories": ["pro-mobile-download-app"]
   },
   "lite-mobile-download-app": {
@@ -710,7 +763,9 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["download_link"],
+    "template_params": [
+      "download_link"
+    ],
     "categories": ["lite-mobile-download-app"]
   },
   "pnt-pro-mobile-download-app": {
@@ -721,7 +776,9 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["download_link"],
+    "template_params": [
+      "download_link"
+    ],
     "categories": ["pnt-pro-mobile-download-app"]
   },
   "pnt-le-mobile-download-app": {
@@ -732,7 +789,9 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["download_link"],
+    "template_params": [
+      "download_link"
+    ],
     "categories": ["pnt-le-mobile-download-app"]
   },
   "welcome-to-studio-for-opt-out-trial-user": {
@@ -754,7 +813,9 @@
         "categories": ["English"]
       }
     },
-    "template_params": ["izotope_code"],
+    "template_params": [
+      "izotope_code"
+    ],
     "categories": ["izotope-code-for-studio-subscribers"]
   },
   "dj-pro-welcome-sub": {
