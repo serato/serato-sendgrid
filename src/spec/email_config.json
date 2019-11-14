@@ -819,7 +819,7 @@
     "categories": ["izotope-code-for-studio-subscribers"]
   },
   "dj-pro-welcome-sub": {
-    "description": "Email template for dj pro sub when a user subscribe.",
+    "description": "Email template that describes how to activate the licenses when a user purchases DJ Pro subscription.",
     "languages": {
       "en": {
         "template_id": "d-229be3ea451545f0ad2ee3ae37f7f2bb",
@@ -830,7 +830,7 @@
     "categories": ["dj-pro-welcome-sub"]
   },
   "dj-suite-welcome-sub": {
-    "description": "Email template for suite sub when a user subscribe.",
+    "description": "Email template that describes how to activate the licenses when a user purchases DJ Suite subscription.",
     "languages": {
       "en": {
         "template_id": "d-fa7ed732f6034ae1a94107b97b6f979d",
@@ -841,7 +841,7 @@
     "categories": ["dj-suite-welcome-sub"]
   },
   "dj-expansions-welcome-sub": {
-    "description": "Email template for expansions sub when a user subscribe.",
+    "description": "Email template that describes how to activate the licenses when a user purchases DJ Expansions subscription.",
     "languages": {
       "en": {
         "template_id": "d-123672494abe4b6e9908f090cc485ba4",
@@ -852,7 +852,7 @@
     "categories": ["dj-expansions-welcome-sub"]
   },
   "dj-essentials-welcome-sub": {
-    "description": "Email template for essentials sub when a user subscribe.",
+    "description": "Email template that describes how to activate the licenses when a user purchases DJ Essentials subscription.",
     "languages": {
       "en": {
         "template_id": "d-4848f8e4b6434e5c805c76faa823a90d",
