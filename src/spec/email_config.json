@@ -817,5 +817,49 @@
       "izotope_code"
     ],
     "categories": ["izotope-code-for-studio-subscribers"]
+  },
+  "dj-pro-welcome-sub": {
+    "description": "Email template for dj pro sub when a user subscribe.",
+    "languages": {
+      "en": {
+        "template_id": "d-229be3ea451545f0ad2ee3ae37f7f2bb",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-pro-welcome-sub"]
+  },
+  "dj-suite-welcome-sub": {
+    "description": "Email template for suite sub when a user subscribe.",
+    "languages": {
+      "en": {
+        "template_id": "d-fa7ed732f6034ae1a94107b97b6f979d",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-suite-welcome-sub"]
+  },
+  "dj-expansions-welcome-sub": {
+    "description": "Email template for expansions sub when a user subscribe.",
+    "languages": {
+      "en": {
+        "template_id": "d-123672494abe4b6e9908f090cc485ba4",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-expansions-welcome-sub"]
+  },
+  "dj-essentials-welcome-sub": {
+    "description": "Email template for essentials sub when a user subscribe.",
+    "languages": {
+      "en": {
+        "template_id": "d-4848f8e4b6434e5c805c76faa823a90d",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-essentials-welcome-sub"]
   }
 }
