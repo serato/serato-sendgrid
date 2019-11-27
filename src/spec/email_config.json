@@ -861,5 +861,16 @@
     },
     "template_params": [],
     "categories": ["dj-essentials-welcome-sub"]
+  },
+  "studio-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Studio outright",
+    "languages": {
+      "en": {
+        "template_id": "d-a73fbd7a788e476284c1863891893862",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-welcome-permanent-license"]
   }
 }
