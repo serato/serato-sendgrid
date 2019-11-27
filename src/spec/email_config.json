@@ -862,7 +862,7 @@
     "template_params": [],
     "categories": ["dj-essentials-welcome-sub"]
   },
-  "studio-thanks-for-purchasing": {
+  "studio-welcome-permanent-license": {
     "description": "Email template for the customers who purchase Studio outright",
     "languages": {
       "en": {
@@ -871,6 +871,6 @@
       }
     },
     "template_params": [],
-    "categories": ["studio-thanks-for-purchasing"]
+    "categories": ["studio-welcome-permanent-license"]
   }
 }
