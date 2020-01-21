@@ -872,5 +872,18 @@
     },
     "template_params": [],
     "categories": ["studio-welcome-permanent-license"]
+  },
+  "izotope-code-stock": {
+    "description": "Email template for iZotope stock sent every 50 codes issues when codes stock level are under 250",
+    "languages": {
+      "en": {
+        "template_id": "d-744de69197bb4df894c888a28778fd5c",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "izotope_stock"
+    ],
+    "categories": ["iZotope-stock-level-warning"]
   }
 }
