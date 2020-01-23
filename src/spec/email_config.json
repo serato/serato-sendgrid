@@ -882,8 +882,14 @@
       }
     },
     "template_params": [
-      "izotope_stock"
+      "izotope_stock",
+      "dev_stack"
     ],
-    "categories": ["iZotope-stock-level-warning"]
+    "categories": ["iZotope-stock-level-warning"],
+    "recipients": {
+      "cc": [
+        "websysops@serato.com"
+      ]
+    }
   }
 }
