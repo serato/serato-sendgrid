@@ -891,5 +891,16 @@
         "websysops@serato.com"
       ]
     }
+  },
+  "sample-le-permanent-license": {
+    "description": "Email template for the customers that redeem a Sample LE voucher code.",
+    "languages": {
+      "en": {
+        "template_id": "d-218ca3a2690c408099a01f9cb4550bf1",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["sample-le-permanent-license"]
   }
 }
