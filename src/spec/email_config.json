@@ -882,9 +882,15 @@
       }
     },
     "template_params": [
-      "izotope_stock"
+      "izotope_stock",
+      "dev_stack"
     ],
-    "categories": ["iZotope-stock-level-warning"]
+    "categories": ["iZotope-stock-level-warning"],
+    "recipients": {
+      "cc": [
+        "websysops@serato.com"
+      ]
+    }
   },
   "sample-le-permanent-license": {
     "description": "Email template for the customers that redeem a Sample LE voucher code.",
@@ -896,5 +902,4 @@
     },
     "template_params": [],
     "categories": ["sample-le-permanent-license"]
-  }
 }
