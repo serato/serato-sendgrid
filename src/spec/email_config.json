@@ -934,7 +934,7 @@
       }
     },
     "template_params": [],
-    "categories": ["updated-password"]
+    "categories": ["password-updated"]
   },
   "change-email-address": {
     "description": "Email template for a user who request to change email address.",
