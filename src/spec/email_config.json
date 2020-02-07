@@ -902,5 +902,51 @@
     },
     "template_params": [],
     "categories": ["sample-le-permanent-license"]
+  },
+  "welcome-to-serato": {
+    "description": "Email template for a new user who joined serato website.",
+    "languages": {
+      "en": {
+        "template_id": "d-5303dfad23c84cd59aa9c785693688ab",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["welcome-to-serato"]
+  },
+  "reset-password": {
+    "description": "Email template for a user who request to reset password.",
+    "languages": {
+      "en": {
+        "template_id": "d-dc88bb49166f4e35a192e374c6a628b8",
+        "categories": ["English"]
+      }
+    },
+    "template_params": ["reset_url"],
+    "categories": ["reset-password"]
+  },
+  "updated-password": {
+    "description": "Email template for a user who updated password.",
+    "languages": {
+      "en": {
+        "template_id": "d-ee3ad7351b994e16a09a75747b20ac22",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["updated-password"]
+  },
+  "change-email-address": {
+    "description": "Email template for a user who request to change email address.",
+    "languages": {
+      "en": {
+        "template_id": "d-964ccc1ab3c04b858c8d4726cb13510d",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "verify_url"
+    ],
+    "categories": ["change-email-address"]
   }
 }
