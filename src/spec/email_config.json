@@ -914,7 +914,7 @@
     "template_params": [],
     "categories": ["welcome-to-serato"]
   },
-  "reset-password": {
+  "password-reset": {
     "description": "Email template for a user who request to reset password.",
     "languages": {
       "en": {
@@ -923,9 +923,9 @@
       }
     },
     "template_params": ["reset_url"],
-    "categories": ["reset-password"]
+    "categories": ["password-reset"]
   },
-  "updated-password": {
+  "password-updated": {
     "description": "Email template for a user who updated password.",
     "languages": {
       "en": {
