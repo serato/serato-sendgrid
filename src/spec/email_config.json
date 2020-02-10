@@ -911,7 +911,16 @@
         "categories": ["English"]
       }
     },
-    "template_params": [],
+    "template_params": [
+      "home_url",
+      "backstage_url",
+      "support_url",
+      "facebook_url",
+      "twitter_url",
+      "youtube_url",
+      "instagram_url",
+      "opted_in"
+    ],
     "categories": ["welcome-to-serato"]
   },
   "password-reset": {
