@@ -90,7 +90,7 @@ class Mailer extends SendGrid
             if (!in_array($key, $emailOptTemplateParams)) {
                 throw new Exception('SendGrid Mailer Exception - Invalid parameter: ' . $key);
             }
-            if (!is_string($key) || !is_string($value)) {
+            if (!is_string($key) || (!is_string($value) && !is_bool($value))) {
                 throw new Exception('SendGrid Mailer Exception - Parameter should be string: "' . $key . '"');
             }
         }
