@@ -957,5 +957,18 @@
       "verify_url"
     ],
     "categories": ["change-email-address"]
+  },
+  "invoice": {
+    "description": "Email tempalte for a invoice",
+    "languages": {
+      "en": {
+        "template_id": "d-bd6365445b414df6b065e41fccd4eac7",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "order_info"
+    ],
+    "categories": ["invoice"]
   }
 }
