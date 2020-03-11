@@ -6,6 +6,7 @@ namespace Serato\SendGrid\Test;
 use PHPUnit\Framework\TestCase;
 use Serato\SendGrid\Mailer;
 use Exception;
+use SendGrid\Mail\Attachment;
 
 class MailerTest extends TestCase
 {
@@ -24,7 +25,7 @@ class MailerTest extends TestCase
 
         # Check number of email templates
         # Change this number when a new template is added
-        $this->assertEquals(39, count($emailOptions));
+        $this->assertEquals(40, count($emailOptions));
         $templateIds = [];
 
         foreach ($emailOptions as $templateName => $config) {
@@ -116,7 +117,7 @@ class MailerTest extends TestCase
                 ['subscription_end_date' => 'value1', 'plan_name' => 123]
             );
         } catch (Exception $e) {
-            $this->assertContains('should be string', $e->getMessage());
+            $this->assertContains('plan_name', $e->getMessage());
         }
 
         # Checking that a valid template, set the correct attributes
@@ -142,13 +143,15 @@ class MailerTest extends TestCase
         // Asserting that the template id is correct
         $this->assertEquals('template-id-for-french', $mail->getTemplateId()->getTemplateId());
 
-        # Checking that the undefined language results in English by default
+        # Checking that the undefined language results in English by default, add `attachments` parameter
+        $attachments = new Attachment('template contents');
         $mailer->sendEmail(
             'studio-sub-voluntary-cancel',
             'test name',
             'test@test.com',
             '', // No language is provided
-            ['subscription_end_date' => '2016-12-05', 'plan_name' => 'name']
+            ['subscription_end_date' => '2016-12-05', 'plan_name' => 'name'],
+            [$attachments]
         );
         $mail = $mailer->getMail();
         $this->assertEquals('template-id-for-english', $mail->getTemplateId()->getTemplateId());

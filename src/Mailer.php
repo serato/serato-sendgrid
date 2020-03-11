@@ -90,8 +90,10 @@ class Mailer extends SendGrid
             if (!in_array($key, $emailOptTemplateParams)) {
                 throw new Exception('SendGrid Mailer Exception - Invalid parameter: ' . $key);
             }
-            if (!is_string($key) || (!is_string($value) && !is_bool($value))) {
-                throw new Exception('SendGrid Mailer Exception - Parameter should be string: "' . $key . '"');
+            
+            if (!is_string($key) || (!is_string($value) && !is_bool($value) && !is_array($value))) {
+                $message = 'SendGrid Mailer Exception - Parameter name can be "string", "array" or "boolean": ' . $key;
+                throw new Exception($message);
             }
         }
 
@@ -107,7 +109,12 @@ class Mailer extends SendGrid
     /**
      * Send email
      *
-     * @param string $templateName
+     * @param string $templateName Template name from email_config.json
+     * @param string $recipientName Name of recipient
+     * @param string $recipientEmail email address
+     * @param string $language language
+     * @param array $templateParams list of parameters required for the template (listed in email_config.json)
+     * @param array $attachments list of attachment of type SendGrid\Mail\Attachment
      * @return \SendGrid\Response | null
      */
     public function sendEmail(
@@ -115,20 +122,18 @@ class Mailer extends SendGrid
         string $recipientName,
         string $recipientEmail,
         string $language,
-        array $templateParams
+        array $templateParams,
+        array $attachments = []
     ):? Response {
         $emailOptions = $this->getEmailConfigByName($templateName);
         $this->validateTemplateParams($templateParams, $emailOptions['template_params']);
-
         $emailLanguage = isset($emailOptions['languages'][$language]) ? $language : 'en';
         $templateId = $emailOptions['languages'][$emailLanguage]['template_id'];
         $categories = array_unique(array_merge(
             $emailOptions['languages'][$emailLanguage]['categories'],
             $emailOptions['categories']
         ));
-
         $this->mail = new Mail();
-
         $emailFromEmail = self::EMAIL_FROM;
         $emailFromEmailName = self::EMAIL_FROM_NAME;
         if (isset($emailOptions['email_from']) && isset($emailOptions['email_from']['from'])) {
@@ -136,15 +141,16 @@ class Mailer extends SendGrid
             $emailFromEmailName = $emailOptions['email_from']['from']['name'];
         };
         $this->mail->setFrom($emailFromEmail, $emailFromEmailName);
-
         if (isset($emailOptions['email_from']) && isset($emailOptions['email_from']['reply_to'])) {
             $replyToEmail = $emailOptions['email_from']['reply_to']['email'];
             $replyToEmailName = $emailOptions['email_from']['reply_to']['name'];
             $this->mail->setReplyTo($replyToEmail, $replyToEmailName);
         };
-
+        foreach ($attachments as $attachment) {
+            $this->mail->addAttachment($attachment);
+        }
         foreach ($templateParams as $key => $value) {
-              $this->mail->addSubstitution($key, $value);
+            $this->mail->addSubstitution($key, $value);
         }
         foreach ($categories as $category) {
             $this->mail->addCategory(new Category($category));
@@ -161,7 +167,6 @@ class Mailer extends SendGrid
                 $this->mail->addCc(new Cc($cc));
             }
         }
-
         if ($this->disableEmailDelivery === true) {
             return null;
         }
