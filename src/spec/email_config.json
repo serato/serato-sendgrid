@@ -959,7 +959,7 @@
     "categories": ["change-email-address"]
   },
   "invoice": {
-    "description": "Email tempalte for a invoice",
+    "description": "Email template for an invoice.",
     "languages": {
       "en": {
         "template_id": "d-bd6365445b414df6b065e41fccd4eac7",
