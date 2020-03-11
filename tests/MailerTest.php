@@ -117,7 +117,7 @@ class MailerTest extends TestCase
                 ['subscription_end_date' => 'value1', 'plan_name' => 123]
             );
         } catch (Exception $e) {
-            $this->assertContains('should be string', $e->getMessage());
+            $this->assertContains('plan_name', $e->getMessage());
         }
 
         # Checking that a valid template, set the correct attributes
@@ -143,7 +143,7 @@ class MailerTest extends TestCase
         // Asserting that the template id is correct
         $this->assertEquals('template-id-for-french', $mail->getTemplateId()->getTemplateId());
 
-        # Checking that the undefined language results in English by default, add `attachments` parameter 
+        # Checking that the undefined language results in English by default, add `attachments` parameter
         $attachments = new Attachment('template contents');
         $mailer->sendEmail(
             'studio-sub-voluntary-cancel',

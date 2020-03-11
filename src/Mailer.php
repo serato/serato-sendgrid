@@ -92,7 +92,8 @@ class Mailer extends SendGrid
             }
             
             if (!is_string($key) || (!is_string($value) && !is_bool($value) && !is_array($value))) {
-                throw new Exception('SendGrid Mailer Exception - Parameter should be string: "' . $key . '"');
+                $message = 'SendGrid Mailer Exception - Parameter name can be "string", "array" or "boolean": ' . $key;
+                throw new Exception($message);
             }
         }
 
@@ -149,7 +150,7 @@ class Mailer extends SendGrid
             $this->mail->addAttachment($attachment);
         }
         foreach ($templateParams as $key => $value) {
-                $this->mail->addSubstitution($key, $value);
+            $this->mail->addSubstitution($key, $value);
         }
         foreach ($categories as $category) {
             $this->mail->addCategory(new Category($category));
