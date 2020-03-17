@@ -969,6 +969,11 @@
     "template_params": [
       "order_info"
     ],
-    "categories": ["invoice"]
+    "categories": ["invoice"],
+    "recipients": {
+      "bcc": [
+        "sales.notifications@serato.com"
+      ]
+    }
   }
 }
