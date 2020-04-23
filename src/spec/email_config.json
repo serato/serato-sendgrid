@@ -975,5 +975,16 @@
         "sales.notifications@serato.com"
       ]
     }
+  },
+  "account-deactivated": {
+    "description": "Email template to confirm account deactivation of a user.",
+    "languages": {
+      "en": {
+        "template_id": "d-229673a7eeb64639b849e6b7cd552296",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["account-deactivated"]
   }
 }
