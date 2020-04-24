@@ -873,6 +873,17 @@
     "template_params": [],
     "categories": ["studio-welcome-permanent-license"]
   },
+  "play-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Play",
+    "languages": {
+      "en": {
+        "template_id": "d-1bb62105683342bdb179c492949d4419",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["play-welcome-permanent-license"]
+  },
   "izotope-code-stock": {
     "description": "Email template for iZotope stock sent every 50 codes issues when codes stock level are under 250",
     "languages": {
