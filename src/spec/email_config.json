@@ -987,6 +987,66 @@
       ]
     }
   },
+  "dj-essentials-permanent-license": {
+    "description": "Email template for customers that purchase DJ Essentials permanent license.",
+    "languages": {
+      "en": {
+        "template_id": "d-e6753b2bab11417ba443a46be310a597",
+        "categories": [
+          "English"
+        ]
+      }
+    },
+    "template_params": [],
+    "categories": [
+      "dj-essentials-permanent-license"
+    ]
+  },
+  "dj-expansions-permanent-license": {
+    "description": "Email template for customers that purchase DJ Expansions permanent license.",
+    "languages": {
+      "en": {
+        "template_id": "d-4cc01e478d4e4dae817f7f71f2413b0c",
+        "categories": [
+          "English"
+        ]
+      }
+    },
+    "template_params": [],
+    "categories": [
+      "dj-expansions-permanent-license"
+    ]
+  },
+  "dj-club-kit-welcome-sub": {
+    "description": "Email template for welcoming customers to the DJ Club kit Subscription.",
+    "languages": {
+      "en": {
+        "template_id": "d-63c9249a62274d69a4154998e874200a",
+        "categories": [
+          "English"
+        ]
+      }
+    },
+    "template_params": [],
+    "categories": [
+      "dj-club-kit-welcome-sub"
+    ]
+  },
+  "dj-toolkit-welcome-sub": {
+    "description": "Email template for welcoming customers to the DJ Toolkit subscription.",
+    "languages": {
+      "en": {
+        "template_id": "d-38062cf06a0249b3a383cdf30dbef09b",
+        "categories": [
+          "English"
+        ]
+      }
+    },
+    "template_params": [],
+    "categories": [
+      "dj-toolkit-welcome-sub"
+    ]
+  },
   "account-deactivated": {
     "description": "Email template to confirm account deactivation of a user.",
     "languages": {
