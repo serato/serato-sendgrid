@@ -873,6 +873,17 @@
     "template_params": [],
     "categories": ["studio-welcome-permanent-license"]
   },
+  "play-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Play",
+    "languages": {
+      "en": {
+        "template_id": "d-1bb62105683342bdb179c492949d4419",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["play-welcome-permanent-license"]
+  },
   "izotope-code-stock": {
     "description": "Email template for iZotope stock sent every 50 codes issues when codes stock level are under 250",
     "languages": {
@@ -1035,5 +1046,16 @@
     "categories": [
       "dj-toolkit-welcome-sub"
     ]
+  },
+  "account-deactivated": {
+    "description": "Email template to confirm account deactivation of a user.",
+    "languages": {
+      "en": {
+        "template_id": "d-229673a7eeb64639b849e6b7cd552296",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["account-deactivated"]
   }
 }
