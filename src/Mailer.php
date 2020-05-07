@@ -14,7 +14,7 @@ use Exception;
 class Mailer extends SendGrid
 {
     const EMAIL_FROM = 'no-reply@serato.com';
-    const EMAIL_FROM_NAME = 'Serato Web Mailer';
+    const EMAIL_FROM_NAME = 'Serato';
     const EMAIL_CONFIG_FILE_PATH = '/spec/email_config.json';
 
     /**
