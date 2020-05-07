@@ -884,6 +884,17 @@
     "template_params": [],
     "categories": ["play-welcome-permanent-license"]
   },
+  "toolkit-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Toolkit",
+    "languages": {
+      "en": {
+        "template_id": "d-4fdb94f31f6742258a6441f364d988fa",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["toolkit-welcome-permanent-license"]
+  },
   "izotope-code-stock": {
     "description": "Email template for iZotope stock sent every 50 codes issues when codes stock level are under 250",
     "languages": {
@@ -1048,7 +1059,7 @@
     ]
   },
   "account-deactivated": {
-    "description": "Email template to confirm account deactivation of a user.",
+    "description": "Email template to confirm that the user's account has been deactivated.",
     "languages": {
       "en": {
         "template_id": "d-229673a7eeb64639b849e6b7cd552296",
@@ -1057,5 +1068,32 @@
     },
     "template_params": [],
     "categories": ["account-deactivated"]
+  },
+  "confirm-user-account-deactivation": {
+    "description": "Email template sent to user to click and confirm their account deactivation",
+    "languages": {
+      "en": {
+        "template_id": "d-9052e93a0bef4fb6b2fa4e16eeed96c4",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "deactivation_url"
+    ],
+    "categories": ["confirm-user-account-deactivation"]
+  },
+  "user-credit-card-expiring": {
+    "description": "Email template sent to users with an expiring credit card",
+    "languages": {
+      "en": {
+        "template_id": "d-3d78553ddbe54fe4a891292b4b10c16f",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "next_billing_date",
+      "plan_name"
+    ],
+    "categories": ["user-credit-card-expiring"]
   }
 }

@@ -25,7 +25,7 @@ class MailerTest extends TestCase
 
         # Check number of email templates
         # Change this number when a new template is added
-        $this->assertEquals(46, count($emailOptions));
+        $this->assertEquals(49, count($emailOptions));
         $templateIds = [];
 
         foreach ($emailOptions as $templateName => $config) {
@@ -139,7 +139,7 @@ class MailerTest extends TestCase
         $this->assertEquals('Sales team email', $mail->getFrom()->getName());
         // Asserting that `reply-to` value is set to `no-reply@serato.com`, which is defined in configuration file
         $this->assertEquals('no-reply@serato.com', $mail->getReplyTo()->getEmail());
-        $this->assertEquals('Serato Web Mailer', $mail->getReplyTo()->getName());
+        $this->assertEquals('Serato', $mail->getReplyTo()->getName());
         // Asserting that the template id is correct
         $this->assertEquals('template-id-for-french', $mail->getTemplateId()->getTemplateId());
 
