@@ -1058,6 +1058,36 @@
       "dj-toolkit-welcome-sub"
     ]
   },
+  "dj-special-plan-1-sub": {
+    "description": "Email template for welcoming customers to the DJ Special plan 1 subscription.",
+    "languages": {
+      "en": {
+        "template_id": "d-df4db01a8d0a4a6a970cf04cf7d0752f",
+        "categories": [
+          "English"
+        ]
+      }
+    },
+    "template_params": [],
+    "categories": [
+      "dj-special-plan-1-sub"
+    ]
+  },
+  "dj-special-plan-2-sub": {
+    "description": "Email template for welcoming customers to the DJ Special plan 2 subscription.",
+    "languages": {
+      "en": {
+        "template_id": "d-27a01433178046c68413d35ca9eacdef",
+        "categories": [
+          "English"
+        ]
+      }
+    },
+    "template_params": [],
+    "categories": [
+      "dj-special-plan-2-sub"
+    ]
+  },
   "account-deactivated": {
     "description": "Email template to confirm that the user's account has been deactivated.",
     "languages": {
@@ -1095,35 +1125,5 @@
       "plan_name"
     ],
     "categories": ["user-credit-card-expiring"]
-  },
-  "dj-special-plan-1-sub": {
-    "description": "Email template for welcoming customers to the DJ Special plan 1 subscription.",
-    "languages": {
-      "en": {
-        "template_id": "d-df4db01a8d0a4a6a970cf04cf7d0752f",
-        "categories": [
-          "English"
-        ]
-      }
-    },
-    "template_params": [],
-    "categories": [
-      "dj-special-plan-1-sub"
-    ]
-  },
-  "dj-special-plan-2-sub": {
-    "description": "Email template for welcoming customers to the DJ Special plan 2 subscription.",
-    "languages": {
-      "en": {
-        "template_id": "d-27a01433178046c68413d35ca9eacdef",
-        "categories": [
-          "English"
-        ]
-      }
-    },
-    "template_params": [],
-    "categories": [
-      "dj-special-plan-2-sub"
-    ]
   }
 }
