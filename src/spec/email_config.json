@@ -75,6 +75,20 @@
     ],
     "categories": ["dj-sub-voluntarily-cancel"]
   },
+  "sub-voluntary-cancel-retention-offer": {
+    "description": "Email template for a subscription cancellation when the user is eligible for a retention offer.",
+    "languages": {
+      "en": {
+        "template_id": "d-f1df950966a14efa88a929d2a30143e7",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "plan_name",
+      "subscription_end_date"
+    ],
+    "categories": ["sub-voluntary-cancel-retention-offer"]
+  },
   "studio-sub-pending-change": {
     "description": "Email template for a Studio subscription change that takes affect when current billing cycle ends.",
     "languages": {
