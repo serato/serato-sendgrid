@@ -913,13 +913,13 @@
     "description": "Email template for iZotope stock sent every 50 codes issues when codes stock level are under 250",
     "languages": {
       "en": {
-        "template_id": "d-744de69197bb4df894c888a28778fd5c",
+        "template_id": "d-a23a285d2ee3429a9abe2bff6f5cc4c2",
         "categories": ["English"]
       }
     },
     "template_params": [
       "izotope_stock",
-      "dev_stack"
+      "stack"
     ],
     "categories": ["iZotope-stock-level-warning"],
     "recipients": {
