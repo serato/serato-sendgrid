@@ -919,7 +919,7 @@
     },
     "template_params": [
       "izotope_stock",
-      "dev_stack"
+      "stack"
     ],
     "categories": ["iZotope-stock-level-warning"],
     "recipients": {
