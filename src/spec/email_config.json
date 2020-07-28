@@ -1110,7 +1110,12 @@
       }
     },
     "template_params": [],
-    "categories": ["account-deactivated"]
+    "categories": ["account-deactivated"],
+    "recipients": {
+      "bcc": [
+        "sales.notifications@serato.com"
+      ]
+    }
   },
   "confirm-user-account-deactivation": {
     "description": "Email template sent to user to click and confirm their account deactivation",
