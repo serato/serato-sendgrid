@@ -1111,12 +1111,7 @@
       }
     },
     "template_params": [],
-    "categories": ["account-deactivated"],
-    "recipients": {
-      "bcc": [
-        "sales.notifications@serato.com"
-      ]
-    }
+    "categories": ["account-deactivated"]
   },
   "confirm-user-account-deactivation": {
     "description": "Email template sent to user to click and confirm their account deactivation",
@@ -1129,7 +1124,12 @@
     "template_params": [
       "deactivation_url"
     ],
-    "categories": ["confirm-user-account-deactivation"]
+    "categories": ["confirm-user-account-deactivation"],
+    "recipients": {
+      "bcc": [
+        "sales.notifications@serato.com"
+      ]
+    }
   },
   "user-credit-card-expiring": {
     "description": "Email template sent to users with an expiring credit card",
