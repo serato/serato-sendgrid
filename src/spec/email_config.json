@@ -1143,5 +1143,19 @@
       "plan_name"
     ],
     "categories": ["user-credit-card-expiring"]
+  },
+  "dj-sub-annual": {
+    "description": "Email template for a DJ Pro Annual subscription. The subscription will be active until the end of billing cycle.",
+    "languages": {
+      "en": {
+        "template_id": "d-d518073770764d9bbbb4e852be9bf2ce",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "subscription_end_date",
+      "plan_name"
+    ],
+    "categories": ["dj-sub-annual"]
   }
 }
