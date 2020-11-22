@@ -1153,8 +1153,9 @@
       }
     },
     "template_params": [
-      "subscription_end_date",
-      "plan_name"
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
     ],
     "categories": ["dj-sub-annual"]
   }
