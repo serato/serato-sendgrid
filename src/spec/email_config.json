@@ -1154,5 +1154,16 @@
     },
     "template_params": [],
     "categories": ["dj-sub-annual"]
+  },
+  "st-dj-sub": {
+    "description": "Email template for a Producer DJ. The subscription will be active until the end of billing cycle.",
+    "languages": {
+      "en": {
+        "template_id": "d-d71e6857518d4094951aadeffc44ff8c",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["st-dj-sub"]
   }
 }
