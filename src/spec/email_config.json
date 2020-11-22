@@ -1152,11 +1152,7 @@
         "categories": ["English"]
       }
     },
-    "template_params": [
-      "plan_name",
-      "billing_start_date",
-      "billing_period"
-    ],
+    "template_params": [],
     "categories": ["dj-sub-annual"]
   }
 }
