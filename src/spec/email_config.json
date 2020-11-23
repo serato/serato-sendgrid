@@ -1152,10 +1152,7 @@
         "categories": ["English"]
       }
     },
-    "template_params": [
-      "subscription_end_date",
-      "plan_name"
-    ],
+    "template_params": [],
     "categories": ["dj-sub-annual"]
   }
 }
