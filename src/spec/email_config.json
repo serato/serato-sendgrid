@@ -1011,6 +1011,24 @@
       ]
     }
   },
+  "dynamic-invoice": {
+    "description": "Email template for an invoice.",
+    "languages": {
+      "en": {
+        "template_id": "d-34c1e90a1f6f41b79e5217e906bdd605",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "order_info"
+    ],
+    "categories": ["invoice"],
+    "recipients": {
+      "bcc": [
+        "jing.xu@serato.com"
+      ]
+    }
+  },
   "dj-essentials-permanent-license": {
     "description": "Email template for customers that purchase DJ Essentials permanent license.",
     "languages": {
