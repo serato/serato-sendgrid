@@ -208,7 +208,8 @@
       "current_plan_name",
       "next_billing_amount",
       "next_billing_date",
-      "target_plan_billing_period"
+      "target_plan_billing_period",
+      "charged_amount"
     ],
     "categories": ["dj-sub-immediate-change"]
   },
