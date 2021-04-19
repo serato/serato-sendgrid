@@ -479,7 +479,7 @@
     "description": "Email template for a DJ subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
-        "template_id": "d-203663fedc0944da80250520deae2cd7",
+        "template_id": "d-b9678e29e3cf4708a8269e05eba48153",
         "categories": ["English"]
       },
       "es": {
@@ -508,7 +508,8 @@
       }
     },
     "template_params": [
-      "next_billing_date"
+      "next_billing_date",
+      "decline-reason"
     ],
     "categories": ["dj-sub-first-payment-declined"]
   },
@@ -516,7 +517,7 @@
     "description": "Email template for a Studio subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
-        "template_id": "d-21879c0f45e049fdb37a7b609a5d541c",
+        "template_id": "d-b9678e29e3cf4708a8269e05eba48153",
         "categories": ["English"]
       },
       "es": {
@@ -545,7 +546,8 @@
       }
     },
     "template_params": [
-      "next_billing_date"
+      "next_billing_date",
+      "decline-reason"
     ],
     "categories": ["studio-sub-first-payment-declined"]
   },
