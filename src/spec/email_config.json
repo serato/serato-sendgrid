@@ -1166,5 +1166,71 @@
     },
     "template_params": [],
     "categories": ["st-dj-sub"]
+  },
+  "dj-sub-declined-insufficient-funds-standard-card": {
+    "description": "Email template for DJ. Declined: Insufficient funds (standard card)",
+    "languages": {
+      "en": {
+        "template_id": "d-7e7b664b60194a518f08b47cd1cc5090",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-sub-declined-insufficient-funds-standard-card"]
+  },
+  "studio-sub-declined-insufficient-funds-standard-card": {
+    "description": "Email template for Studio. Declined: Insufficient funds (standard card)",
+    "languages": {
+      "en": {
+        "template_id": "d-999a4386a6e449de994e804a4c26bab1",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-sub-declined-insufficient-funds-standard-card"]
+  },
+  "dj-sub-declined-insufficient-funds-pre-pay-card": {
+    "description": "Email template for DJ. Declined: Insufficient funds (pre-pay card)",
+    "languages": {
+      "en": {
+        "template_id": "d-fd47e6b07e86412fa4109a848d239a71",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-sub-declined-insufficient-funds-pre-pay-card"]
+  },
+  "studio-sub-declined-insufficient-funds-pre-pay-card": {
+    "description": "Email template for Studio. Declined: Insufficient funds (pre-pay card)",
+    "languages": {
+      "en": {
+        "template_id": "d-d277b3dd8c3f4c66a13a5ea4c4020cb2",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-sub-declined-insufficient-funds-pre-pay-card"]
+  },
+  "dj-sub-expired-card": {
+    "description": "Email template for DJ. Declined: Expired card",
+    "languages": {
+      "en": {
+        "template_id": "d-b59c27213d9e43acb717baadeb377217",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-sub-expired-card"]
+  },
+  "studio-sub-expired-card": {
+    "description": "Email template for Studio. Declined: Expired card",
+    "languages": {
+      "en": {
+        "template_id": "d-da2bbee9584d4c3087cb1a3734fc971d",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-sub-expired-card"]
   }
 }
