@@ -479,7 +479,7 @@
     "description": "Email template for a DJ subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
-        "template_id": "d-b9678e29e3cf4708a8269e05eba48153",
+        "template_id": "d-f60ddc14ae974df380ef639e2dbaac1a",
         "categories": ["English"]
       },
       "es": {
