@@ -479,7 +479,7 @@
     "description": "Email template for a DJ subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
-        "template_id": "d-203663fedc0944da80250520deae2cd7",
+        "template_id": "d-f60ddc14ae974df380ef639e2dbaac1a",
         "categories": ["English"]
       },
       "es": {
@@ -508,7 +508,8 @@
       }
     },
     "template_params": [
-      "next_billing_date"
+      "next_billing_date",
+      "decline_code"
     ],
     "categories": ["dj-sub-first-payment-declined"]
   },
@@ -516,7 +517,7 @@
     "description": "Email template for a Studio subscription when a recurring payment fails for the first time.",
     "languages": {
       "en": {
-        "template_id": "d-21879c0f45e049fdb37a7b609a5d541c",
+        "template_id": "d-b9678e29e3cf4708a8269e05eba48153",
         "categories": ["English"]
       },
       "es": {
@@ -545,7 +546,8 @@
       }
     },
     "template_params": [
-      "next_billing_date"
+      "next_billing_date",
+      "decline_code"
     ],
     "categories": ["studio-sub-first-payment-declined"]
   },
@@ -1166,5 +1168,71 @@
     },
     "template_params": [],
     "categories": ["st-dj-sub"]
+  },
+  "dj-sub-declined-insufficient-funds-standard-card": {
+    "description": "Email template for DJ. Declined: Insufficient funds (standard card)",
+    "languages": {
+      "en": {
+        "template_id": "d-aa79fc796e9c4a82946934d0a09c3567",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-sub-declined-insufficient-funds-standard-card"]
+  },
+  "studio-sub-declined-insufficient-funds-standard-card": {
+    "description": "Email template for Studio. Declined: Insufficient funds (standard card)",
+    "languages": {
+      "en": {
+        "template_id": "d-84f22fbc2f4843a19d28902a4a3c8737",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-sub-declined-insufficient-funds-standard-card"]
+  },
+  "dj-sub-declined-insufficient-funds-pre-pay-card": {
+    "description": "Email template for DJ. Declined: Insufficient funds (pre-pay card)",
+    "languages": {
+      "en": {
+        "template_id": "d-6478004c06fc4ec588a9fa625144914b",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-sub-declined-insufficient-funds-pre-pay-card"]
+  },
+  "studio-sub-declined-insufficient-funds-pre-pay-card": {
+    "description": "Email template for Studio. Declined: Insufficient funds (pre-pay card)",
+    "languages": {
+      "en": {
+        "template_id": "d-d277b3dd8c3f4c66a13a5ea4c4020cb2",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-sub-declined-insufficient-funds-pre-pay-card"]
+  },
+  "dj-sub-expired-card": {
+    "description": "Email template for DJ. Declined: Expired card",
+    "languages": {
+      "en": {
+        "template_id": "d-080a24926f7d4f009b2b82b3f830630f",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-sub-expired-card"]
+  },
+  "studio-sub-expired-card": {
+    "description": "Email template for Studio. Declined: Expired card",
+    "languages": {
+      "en": {
+        "template_id": "d-efddcdba43a54e888ae679841857313f",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["studio-sub-expired-card"]
   }
 }
