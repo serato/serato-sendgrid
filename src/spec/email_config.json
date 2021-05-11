@@ -508,6 +508,7 @@
       }
     },
     "template_params": [
+      "plan_name",
       "next_billing_date",
       "decline_code"
     ],
@@ -546,6 +547,7 @@
       }
     },
     "template_params": [
+      "plan_name",
       "next_billing_date",
       "decline_code"
     ],
@@ -1180,7 +1182,7 @@
     "template_params": [
       "next_billing_date",
       "plan_name",
-      "decline_code",
+      "decline_code"
     ],
     "categories": ["dj-sub-declined-insufficient-funds-standard-card"]
   },
@@ -1195,7 +1197,7 @@
     "template_params": [
       "next_billing_date",
       "plan_name",
-      "decline_code",
+      "decline_code"
     ],
     "categories": ["studio-sub-declined-insufficient-funds-standard-card"]
   },
@@ -1210,7 +1212,7 @@
     "template_params": [
       "next_billing_date",
       "plan_name",
-      "decline_code",
+      "decline_code"
     ],
     "categories": ["dj-sub-declined-insufficient-funds-pre-pay-card"]
   },
@@ -1225,7 +1227,7 @@
     "template_params": [
       "next_billing_date",
       "plan_name",
-      "decline_code",
+      "decline_code"
     ],
     "categories": ["studio-sub-declined-insufficient-funds-pre-pay-card"]
   },
@@ -1240,7 +1242,7 @@
     "template_params": [
       "next_billing_date",
       "plan_name",
-      "decline_code",
+      "decline_code"
     ],
     "categories": ["dj-sub-expired-card"]
   },
@@ -1255,7 +1257,7 @@
     "template_params": [
       "next_billing_date",
       "plan_name",
-      "decline_code",
+      "decline_code"
     ],
     "categories": ["studio-sub-expired-card"]
   }
