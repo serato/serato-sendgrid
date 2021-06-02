@@ -1260,5 +1260,75 @@
       "decline_code"
     ],
     "categories": ["studio-sub-expired-card"]
+  },
+  "subscription-plan-change-immediate": {
+    "description": "Email template for Subscription plan change Immediately",
+    "languages": {
+      "en": {
+        "template_id": "d-04fde19d1f16493ba477d92cb1e201eb",
+        "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-729712c24b364f57be471994b94dbd9d",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-2db9ffcb0eb4440ab2211bd82b4e6093",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-d0417353214346828cc85b68ad236d78",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-463721039f9a43499edf4277f00b219b",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-4105d291f0834d07adfdbeb13f4e9d35",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-1e26190606f44bc3b81f5fa8fe81cf18",
+        "categories": ["Chinese"]
+      }
+    },
+    "template_params": [],
+    "categories": ["subscription-plan-change-immediate"]
+  },
+  "subscription-plan-change-next-cycle": {
+    "description": "Email template for Subscription plan change next cycle",
+    "languages": {
+      "en": {
+        "template_id": "d-97d59cd3ff634b279f7d6b25f763cf97",
+        "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-ff9adb148a0448e88a569de02dc4db2f",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-9865d21c81514a7482fb3b095f8ddf1b",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-47cccb7c400844dfa16ff7b62652ee2a",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-36955929221c434b8c889259e3ff5f8a",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-81a85898a6c744baba8291f5feb6a388",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-76504a15763c4f4d8809befdaf17f193",
+        "categories": ["Chinese"]
+      }
+    },
+    "template_params": [],
+    "categories": ["subscription-plan-change-next-cycle"]
   }
 }
