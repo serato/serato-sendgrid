@@ -1293,7 +1293,13 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": [],
+    "template_params": [
+      "current_plan_name",
+      "target_plan_name",
+      "charged_amount",
+      "next_billing_date",
+      "next_billing_amount"
+    ],
     "categories": ["subscription-plan-change-immediate"]
   },
   "subscription-plan-change-next-cycle": {
@@ -1328,7 +1334,12 @@
         "categories": ["Chinese"]
       }
     },
-    "template_params": [],
+    "template_params": [
+      "current_plan_name",
+      "target_plan_name",
+      "next_billing_date",
+      "next_billing_amount"
+    ],
     "categories": ["subscription-plan-change-next-cycle"]
   }
 }
