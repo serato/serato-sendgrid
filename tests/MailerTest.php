@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Serato\SendGrid\Test;
@@ -10,7 +11,7 @@ use SendGrid\Mail\Attachment;
 
 class MailerTest extends TestCase
 {
-    const FAKE_API_KEY = 'fake-api-key';
+    protected const FAKE_API_KEY = 'fake-api-key';
 
     /**
      * Test default configuration file is valid.
