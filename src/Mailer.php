@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Serato\SendGrid;
@@ -13,9 +14,9 @@ use Exception;
 
 class Mailer extends SendGrid
 {
-    const EMAIL_FROM = 'no-reply@serato.com';
-    const EMAIL_FROM_NAME = 'Serato';
-    const EMAIL_CONFIG_FILE_PATH = '/spec/email_config.json';
+    private const EMAIL_FROM = 'no-reply@serato.com';
+    private const EMAIL_FROM_NAME = 'Serato';
+    private const EMAIL_CONFIG_FILE_PATH = '/spec/email_config.json';
 
     /**
      * @var boolean
@@ -69,7 +70,7 @@ class Mailer extends SendGrid
      * @return array
      */
 
-    public function getEmailConfigByName(String $templateName): array
+    public function getEmailConfigByName(string $templateName): array
     {
         if (array_key_exists($templateName, $this->getEmailConfig())) {
             return $this->getEmailConfig()[$templateName];
@@ -84,13 +85,13 @@ class Mailer extends SendGrid
      * @param array $emailOptTemplateParams
      * @return boolean
      */
-    public function validateTemplateParams(Array $templateParams, Array $emailOptTemplateParams): bool
+    public function validateTemplateParams(array $templateParams, array $emailOptTemplateParams): bool
     {
         foreach ($templateParams as $key => $value) {
             if (!in_array($key, $emailOptTemplateParams)) {
                 throw new Exception('SendGrid Mailer Exception - Invalid parameter: ' . $key);
             }
-            
+
             if (!is_string($key) || (!is_string($value) && !is_bool($value) && !is_array($value))) {
                 $message = 'SendGrid Mailer Exception - Parameter name can be "string", "array" or "boolean": ' . $key;
                 throw new Exception($message);
@@ -124,7 +125,7 @@ class Mailer extends SendGrid
         string $language,
         array $templateParams,
         array $attachments = []
-    ):? Response {
+    ): ?Response {
         $emailOptions = $this->getEmailConfigByName($templateName);
         $this->validateTemplateParams($templateParams, $emailOptions['template_params']);
         $emailLanguage = isset($emailOptions['languages'][$language]) ? $language : 'en';
