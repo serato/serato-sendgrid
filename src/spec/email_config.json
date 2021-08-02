@@ -896,7 +896,7 @@
     "description": "Email template for the customers who purchase Serato Play",
     "languages": {
       "en": {
-        "template_id": "d-1bb62105683342bdb179c492949d4419",
+        "template_id": "d-e533581e357847748b26c046f9c6a400",
         "categories": ["English"]
       }
     },
@@ -913,6 +913,127 @@
     },
     "template_params": [],
     "categories": ["toolkit-welcome-permanent-license"]
+  },
+  "pitch-n-time-dj-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Pitch 'n Time DJ",
+    "languages": {
+      "en": {
+        "template_id": "d-fcfa536a5a174a8681e81cae10bdd47c",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["pitch-n-time-dj-welcome-permanent-license"]
+  },
+  "video-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Video",
+    "languages": {
+      "en": {
+        "template_id": "d-3f91d6a6219241f595ac7c902e00df89",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["video-welcome-permanent-license"]
+  },
+  "flip-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Flip",
+    "languages": {
+      "en": {
+        "template_id": "d-4f61d34c0d8f4cab8c0d08c6e25e3d83",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["flip-welcome-permanent-license"]
+  },
+  "fx-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Flip",
+    "languages": {
+      "en": {
+        "template_id": "d-6c75e301e28c4b53942e2ed8c8b4af2c",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["fx-welcome-permanent-license"]
+  },
+  "dj-pro-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato DJ Pro",
+    "languages": {
+      "en": {
+        "template_id": "d-addef1774423452781b43c0d9a99f5df",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-pro-welcome-permanent-license"]
+  },
+  "dj-suite-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Suite",
+    "languages": {
+      "en": {
+        "template_id": "d-58713000399646f18603988de2b2a76c",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-suite-welcome-permanent-license"]
+  },
+  "dvs-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato DVS",
+    "languages": {
+      "en": {
+        "template_id": "d-1e9e7bca5b2f46df99bb0eb5c2749601",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dvs-welcome-permanent-license"]
+  },
+  "dj-club-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato DJ Club",
+    "languages": {
+      "en": {
+        "template_id": "d-8442202473ef4e52ad5e7e093fefa7c7",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["dj-club-welcome-permanent-license"]
+  },
+  "sample-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Sample",
+    "languages": {
+      "en": {
+        "template_id": "d-a08db1bf9a7142e999e878c12dee87d3",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["sample-welcome-permanent-license"]
+  },
+  "pitch-n-time-le-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Pitch 'n Time LE",
+    "languages": {
+      "en": {
+        "template_id": "d-5a8621a5a2684fe2a8ba3afe61fa84fe",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["pitch-n-time-le-welcome-permanent-license"]
+  },
+  "pitch-n-time-pro-welcome-permanent-license": {
+    "description": "Email template for the customers who purchase Serato Pitch 'n Time Pro",
+    "languages": {
+      "en": {
+        "template_id": "d-4344f2711f61404fb5924e03b692b838",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["pitch-n-time-pro-welcome-permanent-license"]
   },
   "izotope-code-stock": {
     "description": "Email template for iZotope stock sent every 50 codes issues when codes stock level are under 250",
