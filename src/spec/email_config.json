@@ -1260,5 +1260,38 @@
       "plan_name"
     ],
     "categories": ["third-payment-failed"]
+  },
+  "dj-pro-nfr": {
+    "description": "Email template for a DJ Pro or DJ Pro expansion NFR license being assigned to the recipient's email address.",
+    "languages": {
+      "en": {
+        "template_id": "d-68a81df969524884beef7a62f933cd67",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["nfr"]
+  },
+  "sample-nfr": {
+    "description": "Email template for a Sample NFR license being assigned to the recipient's email address.",
+    "languages": {
+      "en": {
+        "template_id": "d-dd947137013a4f8a965bfd967f7487b7",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["nfr"]
+  },
+  "studio-nfr": {
+    "description": "Email template for a Studio NFR license being assigned to the recipient's email address.",
+    "languages": {
+      "en": {
+        "template_id": "d-88a12799f0df44d09183cd6a977d4722",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [],
+    "categories": ["nfr"]
   }
 }
