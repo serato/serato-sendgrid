@@ -627,6 +627,32 @@
     "template_params": [],
     "categories": ["dj-pro-welcome-sub"]
   },
+  "dj-pro-begin-credit-card-trial": {
+    "description": "Email template that describes how to activate the license and when billing will commence when a user subscribes to a DJ Pro credit card trial.",
+    "languages": {
+      "en": {
+        "template_id": "d-d6f66ae8c92d4527af8911792c917f60",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "next_billing_date"
+    ],
+    "categories": ["dj-pro-begin-credit-card-trial"]
+  },
+  "dj-suite-begin-credit-card-trial": {
+    "description": "Email template that describes how to activate the licenses and when billing will commence when a user subscribes to a DJ Suite credit card trial.",
+    "languages": {
+      "en": {
+        "template_id": "d-765967a93fb1419da6266e400a6118b2",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "next_billing_date"
+    ],
+    "categories": ["dj-suite-begin-credit-card-trial"]
+  },
   "dj-suite-welcome-sub": {
     "description": "Email template that describes how to activate the licenses when a user purchases DJ Suite subscription.",
     "languages": {
