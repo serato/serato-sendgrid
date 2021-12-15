@@ -928,7 +928,7 @@
     "description": "Email template for an invoice.",
     "languages": {
       "en": {
-        "template_id": "d-effe033ad89a4775856721b102045ae3 ",
+        "template_id": "d-effe033ad89a4775856721b102045ae3",
         "categories": ["English"]
       }
     },
