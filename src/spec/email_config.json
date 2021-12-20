@@ -1319,5 +1319,23 @@
     },
     "template_params": [],
     "categories": ["nfr"]
+  },
+  "login-notification": {
+    "description": "Email template for a user login with login client, time, and location information.",
+    "languages": {
+      "en": {
+        "template_id": "d-5e9a88a28e2d4d338e977cf56f5dc48b",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "application_name",
+      "operating_system",
+      "browser",
+      "location",
+      "time_of_login",
+      "password_reset_url"
+    ],
+    "categories": ["login"]
   }
 }
