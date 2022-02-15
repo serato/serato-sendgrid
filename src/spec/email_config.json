@@ -633,6 +633,30 @@
       "en": {
         "template_id": "d-d6f66ae8c92d4527af8911792c917f60",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-effee70fa14c4108a6fef33bce56b79f",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-c4815ebc357f47159e4001a805625591",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-fa4aa684433a4bce82c3c5de9f7994a7",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-936639bb15f6466da0aaa626b206a351",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-c6b9846001804baba0d2132e0b3a1a4b",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-30f8119415614ef2a45dcf8107c90831",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
@@ -646,6 +670,30 @@
       "en": {
         "template_id": "d-765967a93fb1419da6266e400a6118b2",
         "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-1d83cddeb94c41598e017e42d846b0a0",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-121bc67607c64cc88850089680a5eb32",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-997096057a3e4b37a67960d46b26b7a1",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-35b0d02d4f9c4a8dbea9efd44cc1a5c1",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-953f1aa70c0049ea90fc89a2affdf489",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-52ce96f3f4764337ae01c4b889becca1",
+        "categories": ["Chinese"]
       }
     },
     "template_params": [
