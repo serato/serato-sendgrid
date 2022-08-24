@@ -709,7 +709,7 @@
         "categories": ["English"]
       }
     },
-    "template_params": [],
+    "template_params": ["next_billing_date"],
     "categories": ["studio-begin-one-month-free"]
   },
   "studio-begin-one-dollar-first-month": {
@@ -720,7 +720,7 @@
         "categories": ["English"]
       }
     },
-    "template_params": [],
+    "template_params": ["next_billing_date"],
     "categories": ["studio-begin-one-dollar-first-month"]
   },
   "dj-suite-welcome-sub": {
