@@ -701,6 +701,28 @@
     ],
     "categories": ["dj-suite-begin-credit-card-trial"]
   },
+  "studio-begin-one-month-free": {
+    "description": "Email template that describes how to activate the licenses and when billing will commence when a user redeems a 1 month free promo code for studio",
+    "languages": {
+      "en": {
+        "template_id": "d-3a0fd661815f4d399bf9fc903e86c6c5",
+        "categories": ["English"]
+      }
+    },
+    "template_params": ["next_billing_date"],
+    "categories": ["studio-begin-one-month-free"]
+  },
+  "studio-begin-one-dollar-first-month": {
+    "description": "Email template that describes how to activate the licenses and when billing will commence when a user redeems a 1 dollar for 1 month promo code for studio",
+    "languages": {
+      "en": {
+        "template_id": "d-81b7705dffaa434ab66c5495d8a2c9f3",
+        "categories": ["English"]
+      }
+    },
+    "template_params": ["next_billing_date"],
+    "categories": ["studio-begin-one-dollar-first-month"]
+  },
   "dj-suite-welcome-sub": {
     "description": "Email template that describes how to activate the licenses when a user purchases DJ Suite subscription.",
     "languages": {
