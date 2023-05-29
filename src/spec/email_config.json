@@ -408,6 +408,61 @@
     ],
     "categories": ["dj-expansion-packs-sub-went-active"]
   },
+  "sample-sub-went-active": {
+    "description": "Email template for a sample subscription that goes active.",
+    "languages": {
+      "en": {
+        "template_id": "d-fe4b33860935421d96f9c8f835ee0318",
+        "categories": [
+          "English"
+        ]
+      },
+      "es": {
+        "template_id": "d-6c6fdb91f74d4be8bfb317b4f280d7ea",
+        "categories": [
+          "Spanish"
+        ]
+      },
+      "fr": {
+        "template_id": "d-09124a5b19de4ff0969b4fb142004b90",
+        "categories": [
+          "French"
+        ]
+      },
+      "de": {
+        "template_id": "d-7e9058bd6aef481193738ce82ece3864",
+        "categories": [
+          "German"
+        ]
+      },
+      "pt": {
+        "template_id": "d-60ae186df4804aedbffa192099098fe5",
+        "categories": [
+          "Portuguese"
+        ]
+      },
+      "ja": {
+        "template_id": "d-4e828b3f31304d08b8bf98f72841149f",
+        "categories": [
+          "Japanese"
+        ]
+      },
+      "zh": {
+        "template_id": "d-f68e6f19104240fc813eb63e4d34790f",
+        "categories": [
+          "Chinese"
+        ]
+      }
+    },
+    "template_params": [
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
+    ],
+    "categories": [
+      "sample-sub-went-active"
+    ]
+  },
   "studio-sub-went-active-from-past-due": {
     "description": "Email template for a past-due studio subscription that goes active.",
     "languages": {
