@@ -37,6 +37,44 @@
     ],
     "categories": ["studio-sub-voluntary-cancel"]
   },
+  "sample-sub-voluntary-cancel": {
+    "description": "Email template for a voluntary Sample subscription cancellation. The subscription will be active until the end of billing cycle.",
+    "languages": {
+      "en": {
+        "template_id": "d-05664d42c7fe4f61824c32adda38a49f",
+        "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-aabe080b6ead4f4cad62e59f61e7c608",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-51bf803c1a0940968793e906bace13e3",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-15645256e1ed4fbfb79c5c788b308d3a",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-426621767f9640448e885f033c0fcf31",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-820b4b85e4be4c2492318ea54a72bf99",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-1433c1599e604bb89e01bbdabcb35aa8",
+        "categories": ["Chinese"]
+      }
+    },
+    "template_params": [
+      "subscription_end_date",
+      "plan_name"
+    ],
+    "categories": ["studio-sub-voluntary-cancel"]
+  },
   "dj-sub-voluntarily-cancel": {
     "description": "Email template for a voluntary DJ subscription cancellation. The subscription will be active until the end of billing cycle.",
     "languages": {
