@@ -1509,6 +1509,12 @@
   },
   "login-notification": {
     "description": "Email template for a user login with login client, time, and location information.",
+    "email_from": {
+      "from": {
+        "email": "support@serato.com",
+        "name": "Serato"
+      }
+    },
     "languages": {
       "en": {
         "template_id": "d-5e9a88a28e2d4d338e977cf56f5dc48b",
