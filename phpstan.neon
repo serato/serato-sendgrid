@@ -4,6 +4,8 @@ parameters:
         - %currentWorkingDirectory%/src
         - %currentWorkingDirectory%/tests
     ignoreErrors:
-        - '#.*no value type specified in iterable type array\.$#'
+        -
+            message: '#.*no value type specified in iterable type array\.$#'
+            path: src/Mailer.php
 includes:
     - vendor/phpstan/phpstan-phpunit/extension.neon
