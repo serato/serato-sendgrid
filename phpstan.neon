@@ -3,5 +3,10 @@ parameters:
     paths:
         - %currentWorkingDirectory%/src
         - %currentWorkingDirectory%/tests
-    includes:
-        - vendor/phpstan/phpstan-phpunit/extension.neon
+# We started getting those errors after upgrading phpstan-phpunit to 0.12. Consider fixing those next time we touch Mailer.php
+    ignoreErrors:
+        -
+            message: '#.*no value type specified in iterable type array\.$#'
+            path: src/Mailer.php
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon

@@ -19,7 +19,7 @@ class MailerTest extends TestCase
      *
      * @group config
      */
-    public function testDefaultEmailConfiguration()
+    public function testDefaultEmailConfiguration(): void
     {
         $mailer = new Mailer(self::FAKE_API_KEY, true);
         $emailOptions = $mailer->getEmailConfig();
@@ -55,7 +55,7 @@ class MailerTest extends TestCase
      * @group config
      * @expectedException Exception
      */
-    public function testInvalidEmailConfigurationFile()
+    public function testInvalidEmailConfigurationFile(): void
     {
         $mailer = new Mailer(self::FAKE_API_KEY, true, __DIR__ . '/resources/invalid_email_config.json');
     }
@@ -65,7 +65,7 @@ class MailerTest extends TestCase
      *
      * @group mail
      */
-    public function testValidEmailConfigurationFile()
+    public function testValidEmailConfigurationFile(): void
     {
         $mailer = new Mailer(self::FAKE_API_KEY, true, __DIR__ . '/resources/valid_email_config.json');
 
