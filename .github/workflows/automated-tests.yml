@@ -1,5 +1,4 @@
 name: Automated tests and static code analyzers
-
 on:
   pull_request:
     types: [opened, synchronize, reopened]
@@ -8,9 +7,6 @@ on:
       - master
       - "/^v\\d+\\.\\d+(\\.\\d+)?(-\\S*)?$/" #release branches
   workflow_dispatch:
-
-env:
-  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 
 jobs:
   unit-tests-and-analyzers:
