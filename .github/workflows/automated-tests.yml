@@ -1,3 +1,5 @@
+# This workflow is triggered every time a PR is opened, reopened, or the head branch of the pull request is updated.
+# Also is triggered when there is a push to master or a release branch. # It is also possible to trigger it manually.
 name: Automated tests and static code analyzers
 on:
   pull_request:
