@@ -36,8 +36,6 @@ jobs:
         uses: php-actions/composer@v6
         with:
           php_version: ${{ matrix.php-versions }}
-          php_extensions: gmp
-          version: 2.2
 
       - name: Run static code analyzers
         run: |
