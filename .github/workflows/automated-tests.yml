@@ -10,8 +10,12 @@ on:
 
 jobs:
   unit-tests-and-analyzers:
-    name: Phpstan, Phpcs, Phpunit tests
-    runs-on: ubuntu-latest
+    name: "PHP ${{ matrix.php-versions }}: Phpstan, Phpcs, Phpunit tests"
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating-system: ubuntu-latest
+        php-versions: ['7.1', '7.2']
     steps:
       - uses: actions/checkout@v3
       - name: Setup PHP
