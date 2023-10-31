@@ -21,7 +21,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@master
         with:
-          php-version: '7.1'
+          php-version: ${{ matrix.php-versions }}
 
       - name: Cache Composer dependencies
         uses: actions/cache@v3
@@ -34,7 +34,7 @@ jobs:
       - name: Install dependencies
         uses: php-actions/composer@v6
         with:
-          php_version: "7.1"
+          php_version: ${{ matrix.php-versions }}
           php_extensions: gmp
           version: 2.2
 
