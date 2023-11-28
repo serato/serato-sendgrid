@@ -1281,7 +1281,11 @@
         "categories": ["English"]
       }
     },
-    "template_params": [],
+    "template_params": [
+      "plan_name",
+      "billing_start_date",
+      "billing_period"
+    ],
     "categories": ["st-dj-sub"]
   },
   "subscription-plan-change-immediate": {
