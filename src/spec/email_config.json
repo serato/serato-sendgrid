@@ -1543,6 +1543,9 @@
         "categories": ["English"]
       }
     },
+    "template_params": [
+      "old_email_address"
+    ],
     "categories": ["confirm-changed-email-address"]
   }
 }
