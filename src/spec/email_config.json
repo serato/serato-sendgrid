@@ -1544,7 +1544,7 @@
       }
     },
     "template_params": [
-      "$OldEmailAddress"
+      "old_email_address"
     ],
     "categories": ["confirm-changed-email-address"]
   }
