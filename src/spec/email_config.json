@@ -1534,5 +1534,18 @@
       "password_reset_url"
     ],
     "categories": ["login"]
+  },
+  "confirm-changed-email-address": {
+    "description": "Email template for a user who request to change email address and receives a confirmation.",
+    "languages": {
+      "en": {
+        "template_id": "d-461b16f214414575a6ea202a57108f8f",
+        "categories": ["English"]
+      }
+    },
+    "template_params": [
+      "old_email_address"
+    ],
+    "categories": ["confirm-changed-email-address"]
   }
 }
