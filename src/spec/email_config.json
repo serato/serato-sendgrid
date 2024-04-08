@@ -608,34 +608,34 @@
     "categories": ["sound-pack-download-link"]
   },
   "cms-sound-pack-download-link": {
-    "description": "Email template for SoundPack download link.",
+    "description": "CMS - Email template for SoundPack download link.",
     "languages": {
       "en": {
         "template_id": "d-7036a76cc75b468ba9bceb08b16e6f7c",
         "categories": ["English"]
       },
       "es": {
-        "template_id": "d-5f7b76fd00fb40c6afede74b7094560d",
+        "template_id": "d-ba22ec999aa14ba4b169a9bd95d8f978",
         "categories": ["Spanish"]
       },
       "fr": {
-        "template_id": "d-0ee03f534c504494a8c4e81a50a2736f",
+        "template_id": "d-1cea1f66c8234829b07e16a712829405",
         "categories": ["French"]
       },
       "de": {
-        "template_id": "d-82753bfe34c349adb29d7f76b69ed32e",
+        "template_id": "d-295a930ba0ad451cbf618a6421a2c4d9",
         "categories": ["German"]
       },
       "pt": {
-        "template_id": "d-0fc04d44ba1d4a6e9ae3dbe2b45701ab",
+        "template_id": "d-9ba50aa1807947b88d36fb01b935a1d7",
         "categories": ["Portuguese"]
       },
       "ja": {
-        "template_id": "d-d46d45159ff54faaaa27265058421584",
+        "template_id": "d-379065b8e81e440182f0a9ffc6e553c1",
         "categories": ["Japanese"]
       },
       "zh": {
-        "template_id": "d-7b6916b46f694815b69ea034adbb5d56",
+        "template_id": "d-54f54b7b7d984acebc0edf9620a1fb00",
         "categories": ["Chinese"]
       }
     },
