@@ -607,6 +607,45 @@
     ],
     "categories": ["sound-pack-download-link"]
   },
+  "cms-sound-pack-download-link": {
+    "description": "Email template for SoundPack download link.",
+    "languages": {
+      "en": {
+        "template_id": "d-7036a76cc75b468ba9bceb08b16e6f7c",
+        "categories": ["English"]
+      },
+      "es": {
+        "template_id": "d-5f7b76fd00fb40c6afede74b7094560d",
+        "categories": ["Spanish"]
+      },
+      "fr": {
+        "template_id": "d-0ee03f534c504494a8c4e81a50a2736f",
+        "categories": ["French"]
+      },
+      "de": {
+        "template_id": "d-82753bfe34c349adb29d7f76b69ed32e",
+        "categories": ["German"]
+      },
+      "pt": {
+        "template_id": "d-0fc04d44ba1d4a6e9ae3dbe2b45701ab",
+        "categories": ["Portuguese"]
+      },
+      "ja": {
+        "template_id": "d-d46d45159ff54faaaa27265058421584",
+        "categories": ["Japanese"]
+      },
+      "zh": {
+        "template_id": "d-7b6916b46f694815b69ea034adbb5d56",
+        "categories": ["Chinese"]
+      }
+    },
+    "template_params": [
+      "soundpack_name",
+      "download_link",
+      "image_path"
+    ],
+    "categories": ["sound-pack-download-link"]
+  },
   "studio-mobile-download-app": {
     "description": "Email template for Studio - Mobile Download link.",
     "languages": {
