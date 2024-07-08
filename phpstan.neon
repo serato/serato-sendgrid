@@ -3,3 +3,4 @@ parameters:
     paths:
         - %currentWorkingDirectory%/src
         - %currentWorkingDirectory%/tests
+    treatPhpDocTypesAsCertain: false
