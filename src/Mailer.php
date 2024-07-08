@@ -117,7 +117,8 @@ class Mailer extends SendGrid
      * @param string $recipientName Name of recipient
      * @param string $recipientEmail email address
      * @param string $language language
-     * @param Array<SendGrid\Mail\Substitution|string, mixed> $templateParams list of parameters required for the template (listed in email_config.json)
+     * @param Array<SendGrid\Mail\Substitution|string, mixed> $templateParams list of parameters required for the
+     * template (listed in email_config.json)
      * @param Array<mixed, mixed> $attachments list of attachment of type SendGrid\Mail\Attachment
      * @return Response | null
      * @throws TypeException
