@@ -9,6 +9,7 @@ use SendGrid\Mail\Mail;
 use SendGrid\Mail\Category;
 use SendGrid\Mail\Cc;
 use SendGrid\Mail\Bcc;
+use SendGrid\Mail\TypeException;
 use SendGrid\Response;
 use Exception;
 
@@ -24,7 +25,7 @@ class Mailer extends SendGrid
     private $disableEmailDelivery = false;
 
     /**
-     * @var array
+     * @var Array<mixed,mixed>
      */
     private $emailConfig;
 
@@ -39,7 +40,7 @@ class Mailer extends SendGrid
      * @param string $apiKey  Your Twilio SendGrid API Key.
      * @param boolean $disableEmailDelivery  Optional flag for disabling the delivery
      * @param string $emailConfigFilePath   Optional path for email configuration (mainly for testing purpose)
-     * @param array  $options An array of options, currently only "host", "curl" and
+     * @param Array<mixed, mixed>  $options An array of options, currently only "host", "curl" and
      *                        "impersonateSubuser" are implemented.
      */
     public function __construct(
@@ -67,7 +68,8 @@ class Mailer extends SendGrid
      * Returns email configuration for a specific template name
      *
      * @param string $templateName
-     * @return array
+     * @return Array<mixed, mixed>
+     * @throws Exception
      */
 
     public function getEmailConfigByName(string $templateName): array
@@ -81,9 +83,10 @@ class Mailer extends SendGrid
     /**
      * Check template parameters are valid
      *
-     * @param array $templateParams
-     * @param array $emailOptTemplateParams
+     * @param Array<mixed, mixed> $templateParams
+     * @param Array<mixed, mixed> $emailOptTemplateParams
      * @return boolean
+     * @throws Exception
      */
     public function validateTemplateParams(array $templateParams, array $emailOptTemplateParams): bool
     {
@@ -114,9 +117,12 @@ class Mailer extends SendGrid
      * @param string $recipientName Name of recipient
      * @param string $recipientEmail email address
      * @param string $language language
-     * @param array $templateParams list of parameters required for the template (listed in email_config.json)
-     * @param array $attachments list of attachment of type SendGrid\Mail\Attachment
-     * @return \SendGrid\Response | null
+     * @param Array<SendGrid\Mail\Substitution|string, mixed> $templateParams list of parameters required for the
+     * template (listed in email_config.json)
+     * @param Array<mixed, mixed> $attachments list of attachment of type SendGrid\Mail\Attachment
+     * @return Response | null
+     * @throws TypeException
+     * @throws Exception
      */
     public function sendEmail(
         string $templateName,
@@ -176,9 +182,9 @@ class Mailer extends SendGrid
 
     /**
      * Returns the email configuration
-     * @return array
+     * @return Array<mixed, mixed>
      */
-    public function getEmailConfig()
+    public function getEmailConfig(): array
     {
         return $this->emailConfig;
     }
@@ -187,7 +193,7 @@ class Mailer extends SendGrid
      * Returns the SendGrid Mail object
      * @return Mail
      */
-    public function getMail()
+    public function getMail(): Mail
     {
         return $this->mail;
     }

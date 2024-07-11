@@ -31,11 +31,11 @@ class MailerTest extends TestCase
 
         foreach ($emailOptions as $templateName => $config) {
             # Check that all templates have at least "en" for language
-            $this->assertTrue(array_key_exists('en', $config['languages']));
+            $this->assertArrayHasKey('en', $config['languages']);
             foreach ($config['languages'] as $lang => $langOptions) {
                 # Check that there is a template id for all languages
-                $this->assertTrue(
-                    !is_null($langOptions['template_id']) && !empty($langOptions['template_id']),
+                $this->assertNotEmpty(
+                    $langOptions['template_id'],
                     "Template ID is missing for '$lang' in '$templateName'"
                 );
 
@@ -53,10 +53,11 @@ class MailerTest extends TestCase
      * Test an invalid configuration file
      *
      * @group config
-     * @expectedException Exception
+     *
      */
     public function testInvalidEmailConfigurationFile(): void
     {
+        $this->expectException(Exception::class);
         $mailer = new Mailer(self::FAKE_API_KEY, true, __DIR__ . '/resources/invalid_email_config.json');
     }
 
@@ -64,6 +65,7 @@ class MailerTest extends TestCase
      * Test sending an email with valid configuration
      *
      * @group mail
+     * @throws Exception
      */
     public function testValidEmailConfigurationFile(): void
     {
@@ -79,7 +81,7 @@ class MailerTest extends TestCase
                 ['param1' => 'value1']
             );
         } catch (Exception $e) {
-            $this->assertContains('Invalid email template name', $e->getMessage());
+            $this->assertStringContainsString('Invalid email template name', $e->getMessage());
         }
 
         # check that invalid parameters, throws an exception
@@ -92,7 +94,7 @@ class MailerTest extends TestCase
                 ['param1' => 'value1']
             );
         } catch (Exception $e) {
-            $this->assertContains('Invalid parameter', $e->getMessage());
+            $this->assertStringContainsString('Invalid parameter', $e->getMessage());
         }
 
         # check that invalid parameters, throws an exception
@@ -105,7 +107,7 @@ class MailerTest extends TestCase
                 ['subscription_end_date' => 'value1']
             );
         } catch (Exception $e) {
-            $this->assertContains('missing', $e->getMessage());
+            $this->assertStringContainsString('missing', $e->getMessage());
         }
 
         # check that invalid parameters, throws an exception
@@ -118,7 +120,7 @@ class MailerTest extends TestCase
                 ['subscription_end_date' => 'value1', 'plan_name' => 123]
             );
         } catch (Exception $e) {
-            $this->assertContains('plan_name', $e->getMessage());
+            $this->assertStringContainsString('plan_name', $e->getMessage());
         }
 
         # Checking that a valid template, set the correct attributes
@@ -131,9 +133,9 @@ class MailerTest extends TestCase
         );
         $mail = $mailer->getMail();
         // Asserting that the right categories are set
-        $expctedCategories = ['French', 'studio-sub-voluntary-cancel'];
+        $expectedCategories = ['French', 'studio-sub-voluntary-cancel'];
         foreach ($mail->getCategories() as $category) {
-            $this->assertContains($category->getCategory(), $expctedCategories);
+            $this->assertContains($category->getCategory(), $expectedCategories);
         }
         // Asserting that `from` value is set to `sales@serato.com`, which is defined in configuration file
         $this->assertEquals('sales@serato.com', $mail->getFrom()->getEmail());
