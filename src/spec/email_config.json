@@ -73,7 +73,7 @@
       "subscription_end_date",
       "plan_name"
     ],
-    "categories": ["studio-sub-voluntary-cancel"]
+    "categories": ["sample-sub-voluntary-cancel"]
   },
   "dj-sub-voluntarily-cancel": {
     "description": "Email template for a voluntary DJ subscription cancellation. The subscription will be active until the end of billing cycle.",
@@ -644,7 +644,7 @@
       "download_link",
       "image_path"
     ],
-    "categories": ["sound-pack-download-link"]
+    "categories": ["cms-sound-pack-download-link"]
   },
   "studio-mobile-download-app": {
     "description": "Email template for Studio - Mobile Download link.",
